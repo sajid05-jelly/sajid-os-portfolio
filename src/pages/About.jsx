@@ -79,7 +79,7 @@ const About = () => {
         </div>
 
         {/* Center Column: 4-Point Cycle Circle Graphic */}
-        <div className="lg:col-span-4 flex items-center justify-center py-6 lg:py-0">
+        <div className="lg:col-span-4 flex items-center justify-center pt-6 pb-14 lg:py-0">
           <div className="relative w-60 h-60 sm:w-72 sm:h-72 md:w-[330px] md:h-[330px] flex items-center justify-center">
             
             {/* 1. Giant Circular Profile Image (Base Layer) */}

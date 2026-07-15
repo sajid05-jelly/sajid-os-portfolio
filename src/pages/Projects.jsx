@@ -348,7 +348,7 @@ const Projects = () => {
   if (selectedProject !== null) {
     const p = projectsData[selectedProject];
     return (
-      <div className="relative w-full h-full lg:h-full pt-20 lg:pt-[45px] pb-8 px-6 md:px-16 pointer-events-auto overflow-y-auto lg:overflow-y-hidden bg-[#F5F2EA] flex flex-col gap-2 select-none">
+      <div className="relative w-full h-full lg:h-full pt-20 lg:pt-[45px] pb-8 px-6 md:px-16 pointer-events-auto overflow-y-auto overflow-x-hidden lg:overflow-y-hidden bg-[#F5F2EA] flex flex-col gap-2 select-none">
         
         {/* Large Background Watermark Text */}
         <div className="absolute inset-0 pointer-events-none z-0 flex items-center justify-center overflow-hidden opacity-[0.03] select-none">
@@ -1006,7 +1006,7 @@ const Projects = () => {
   }
 
   return (
-    <div className="relative w-full h-full lg:h-full pt-36 md:pt-16 pb-24 px-6 md:px-16 pointer-events-auto overflow-y-auto lg:overflow-y-hidden bg-[#F5F2EA] flex flex-col justify-start lg:justify-center select-none">
+    <div className="relative w-full h-full lg:h-full pt-36 md:pt-16 pb-24 px-6 md:px-16 pointer-events-auto overflow-y-auto overflow-x-hidden lg:overflow-y-hidden bg-[#F5F2EA] flex flex-col justify-start lg:justify-center select-none">
       
       {/* Large Background Watermark Text */}
       <div className="absolute inset-0 pointer-events-none z-0 flex items-center justify-center overflow-hidden opacity-[0.02] select-none">
