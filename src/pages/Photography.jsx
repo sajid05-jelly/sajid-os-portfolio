@@ -27,6 +27,17 @@ const Photography = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
+    if (lightbox) {
+      document.body.classList.add('cert-zoomed');
+    } else {
+      document.body.classList.remove('cert-zoomed');
+    }
+    return () => {
+      document.body.classList.remove('cert-zoomed');
+    };
+  }, [lightbox]);
+
+  useEffect(() => {
     const handleMouseMove = (e) => {
       const width = window.innerWidth;
       if (e.clientX < width * 0.35) setMouseZone('left');

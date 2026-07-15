@@ -173,7 +173,7 @@ const OSInterface = () => {
   }
 
   return (
-    <div className="absolute inset-0 pointer-events-none z-[90] flex flex-col justify-between p-6">
+    <div className="os-interface-frame absolute inset-0 pointer-events-none z-[90] flex flex-col justify-between p-6">
       
       {/* Top Details (Minimalist Header Menu) */}
       {location.pathname !== '/content-creator' && (

@@ -287,7 +287,7 @@ const Certifications = () => {
           onClick={() => setSelectedCert(null)}
           className="fixed inset-0 bg-[#0d0c0c]/95 backdrop-blur-2xl z-[9999] flex items-center justify-center p-4 md:p-10 pointer-events-auto cursor-zoom-out animate-fadeIn"
         >
-          {/* Close/Exit button on left side/top-left */}
+          {/* Close/Exit button on left side/top-left (positioned below header) */}
           <button 
             onClick={() => setSelectedCert(null)}
             className="absolute top-4 left-4 md:top-8 md:left-8 flex items-center gap-2 font-mono text-xs uppercase tracking-widest text-white/60 hover:text-os-accent hover:scale-105 transition-all duration-300 cursor-pointer pointer-events-auto bg-white/5 border border-white/10 px-3 py-1.5 rounded"
