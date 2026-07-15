@@ -111,7 +111,7 @@ const Home = () => {
         {/* Layer 28: Midground Identity Main Heading Behind Portrait but in front of circle */}
         <div 
           ref={fgTextRef} 
-          className="absolute z-28 right-[25vw] md:right-14 bottom-[30%] md:bottom-[27%] flex flex-col items-end pointer-events-none transform-gpu text-right"
+          className="hidden md:flex absolute z-28 right-[25vw] md:right-14 bottom-[30%] md:bottom-[27%] flex-col items-end pointer-events-none transform-gpu text-right"
           style={{ transform: 'translateZ(60px)', transformStyle: 'preserve-3d' }}
         >
           <h2 className="text-3xl sm:text-4xl md:text-6xl font-heading font-black text-os-black/40 leading-none tracking-wider select-none uppercase">
