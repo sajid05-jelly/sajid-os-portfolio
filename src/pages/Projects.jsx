@@ -386,13 +386,13 @@ const Projects = () => {
               <div className="flex gap-1.5 mb-3">
                 <button 
                   onClick={() => setSelectedProject((selectedProject - 1 + projectsData.length) % projectsData.length)}
-                  className="w-7 h-7 rounded-full border border-os-black/20 flex items-center justify-center hover:bg-os-black hover:text-[#F5F2EA] transition-all duration-300 text-xs"
+                  className="w-7 h-7 rounded-full border border-os-black/20 flex items-center justify-center hover:bg-os-black hover:text-os-white transition-all duration-300 text-xs"
                 >
                   ←
                 </button>
                 <button 
                   onClick={() => setSelectedProject((selectedProject + 1) % projectsData.length)}
-                  className="w-7 h-7 rounded-full border border-os-black/20 flex items-center justify-center hover:bg-os-black hover:text-[#F5F2EA] transition-all duration-300 text-xs"
+                  className="w-7 h-7 rounded-full border border-os-black/20 flex items-center justify-center hover:bg-os-black hover:text-os-white transition-all duration-300 text-xs"
                 >
                   →
                 </button>
@@ -1054,13 +1054,13 @@ const Projects = () => {
               <div className="flex gap-2">
                 <button 
                   onClick={handlePrev}
-                  className="w-10 h-10 rounded-full border border-os-black/20 flex items-center justify-center hover:bg-os-black hover:text-[#F5F2EA] transition-all duration-300 pointer-events-auto"
+                  className="w-10 h-10 rounded-full border border-os-black/20 flex items-center justify-center hover:bg-os-black hover:text-os-white transition-all duration-300 pointer-events-auto"
                 >
                   ←
                 </button>
                 <button 
                   onClick={handleNext}
-                  className="w-10 h-10 rounded-full border border-os-black/20 flex items-center justify-center hover:bg-os-black hover:text-[#F5F2EA] transition-all duration-300 pointer-events-auto"
+                  className="w-10 h-10 rounded-full border border-os-black/20 flex items-center justify-center hover:bg-os-black hover:text-os-white transition-all duration-300 pointer-events-auto"
                 >
                   →
                 </button>
