@@ -213,7 +213,7 @@ const About = () => {
         ))}
       </div>
 
-      <div className="relative lg:absolute bottom-0 left-0 w-full bg-[#E5E2D9] py-1 overflow-hidden pointer-events-none select-none z-0 border-t border-os-black/5 mt-8 lg:mt-0">
+      <div className="relative lg:absolute bottom-0 left-0 w-full bg-[#E5E2D9] py-1 pb-4 lg:pb-1 overflow-hidden pointer-events-none select-none z-0 border-t border-os-black/5 mt-8 lg:mt-0">
         <div className="flex gap-4 items-center whitespace-nowrap animate-[marquee_6s_linear_infinite] font-mono text-[8px] font-bold uppercase tracking-[0.25em] text-os-accent">
           <span>✦ CREATIVE THINKER</span>
           <span>— PROBLEM SOLVER</span>
