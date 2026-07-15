@@ -187,10 +187,10 @@ const ContentCreator = () => {
       </div>
 
       {/* Main Grid: Left, Middle, Right Column Panels */}
-      <div className="max-w-[1400px] mx-auto w-full relative z-10 grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-6 items-start shrink-0 py-2">
+      <div className="max-w-[1400px] mx-auto w-full relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-6 items-start shrink-0 py-2">
         
         {/* Left Column: Headline & Description */}
-        <div className="md:col-span-3 flex flex-col justify-between h-auto text-left lg:pl-10 space-y-6 pb-6 md:pb-0">
+        <div className="lg:col-span-3 flex flex-col justify-between h-auto text-left lg:pl-10 space-y-6 pb-6 lg:pb-0">
           <div className="space-y-4">
             <span className="font-mono text-[11px] text-os-accent font-bold tracking-widest">// CREATOR CONCEPT</span>
             <h2 className="text-4xl md:text-[40px] font-heading font-black leading-[0.95] tracking-tighter text-os-black uppercase">
@@ -229,7 +229,7 @@ const ContentCreator = () => {
         </div>
 
         {/* Middle Column: Hero Video Frame & Quick Stats */}
-        <div className="md:col-span-5 flex flex-col justify-center items-center relative pt-0 pb-6 md:pb-0">
+        <div className="lg:col-span-5 flex flex-col justify-center items-center relative pt-0 pb-6 lg:pb-0">
           
           <div className="w-full flex items-center justify-between mb-2 px-1 max-w-[560px] mx-auto">
             <span className="font-mono text-[9px] uppercase tracking-widest text-os-black/40">// CAPTURING. CREATING. CONNECTING.</span>
@@ -326,7 +326,7 @@ const ContentCreator = () => {
         </div>
 
         {/* Right Column: Social Metrics & Tools */}
-        <div className="md:col-span-4 flex flex-col justify-between h-auto text-left space-y-6 lg:pr-10 pb-6 md:pb-0">
+        <div className="lg:col-span-4 flex flex-col justify-between h-auto text-left space-y-6 lg:pr-10 pb-6 lg:pb-0">
           
           {/* Social Stats Block */}
           <div className="space-y-2">
@@ -474,10 +474,10 @@ const ContentCreator = () => {
       </div>
 
       {/* Row 3: Creator Journey (Timeline) & Quote Box */}
-      <div className="max-w-[1400px] mx-auto w-full border-t border-os-black/15 pt-4 pb-2 grid grid-cols-1 md:grid-cols-12 gap-6 relative z-10 shrink-0">
+      <div className="max-w-[1400px] mx-auto w-full border-t border-os-black/15 pt-4 pb-2 grid grid-cols-1 lg:grid-cols-12 gap-6 relative z-10 shrink-0">
         
         {/* Left/Center: Timeline Horizontal Node */}
-        <div className="md:col-span-8 flex flex-col md:flex-row items-start md:items-center gap-6 md:border-r border-os-black/5 pr-4 text-left pb-6 md:pb-0">
+        <div className="lg:col-span-8 flex flex-col lg:flex-row items-start lg:items-center gap-6 lg:border-r border-os-black/5 pr-4 text-left pb-6 lg:pb-0">
           
           <div className="bg-os-accent text-white font-mono text-[9px] font-bold tracking-widest py-2 px-3 rounded uppercase leading-none min-w-[120px] text-center">
             // CREATOR JOURNEY ➔
@@ -503,7 +503,7 @@ const ContentCreator = () => {
         </div>
 
         {/* Right: Quote Box */}
-        <div className="md:col-span-4 bg-[#1A1918] text-white rounded-md p-4 flex items-center justify-between gap-4 relative overflow-hidden text-left shadow-lg">
+        <div className="lg:col-span-4 bg-[#1A1918] text-white rounded-md p-4 flex items-center justify-between gap-4 relative overflow-hidden text-left shadow-lg">
           <div className="space-y-2 flex-1 pr-2 z-10">
             <span className="text-os-accent text-xl font-black font-serif leading-none block">“</span>
             <p className="font-mono text-[8px] tracking-wider uppercase leading-relaxed text-white/80">
