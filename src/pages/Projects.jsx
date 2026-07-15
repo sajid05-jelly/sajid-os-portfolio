@@ -1006,7 +1006,7 @@ const Projects = () => {
   }
 
   return (
-    <div className="relative w-full h-full xl:h-full pt-36 md:pt-16 pb-24 px-6 md:px-16 pointer-events-auto overflow-y-auto overflow-x-hidden xl:overflow-y-hidden bg-[#F5F2EA] flex flex-col justify-start xl:justify-center select-none">
+    <div className="relative w-full h-full xl:h-full pt-44 md:pt-28 pb-24 px-6 md:px-16 pointer-events-auto overflow-y-auto overflow-x-hidden xl:overflow-y-hidden bg-[#F5F2EA] flex flex-col justify-start xl:justify-center select-none">
       
       {/* Large Background Watermark Text */}
       <div className="absolute inset-0 pointer-events-none z-0 flex items-center justify-center overflow-hidden opacity-[0.02] select-none">

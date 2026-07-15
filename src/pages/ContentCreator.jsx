@@ -138,10 +138,6 @@ const ContentCreator = () => {
             <h1 className="text-xl font-bold tracking-tighter text-os-black group-hover:opacity-80 transition-opacity">
               SAJID<span className="font-light text-os-accent">OS</span>
             </h1>
-            <span className="h-4 w-[1px] bg-os-black/10"></span>
-            <span className="font-mono text-xs uppercase tracking-widest text-os-accent font-bold">
-              Content Archive 07
-            </span>
           </div>
           <p className="text-[10px] font-mono uppercase tracking-widest text-os-black/50 mt-0.5">
             Vol. 1 — Creative Protocol
@@ -193,13 +189,13 @@ const ContentCreator = () => {
         <div className="xl:col-span-3 flex flex-col justify-between h-auto text-left xl:pl-10 space-y-6 pb-6 xl:pb-0">
           <div className="space-y-4">
             <span className="font-mono text-[11px] text-os-accent font-bold tracking-widest">// CREATOR CONCEPT</span>
-            <h2 className="text-4xl md:text-[40px] font-heading font-black leading-[0.95] tracking-tighter text-os-black uppercase">
+            <h2 className="text-4xl md:text-5xl xl:text-[54px] font-heading font-black leading-[0.95] tracking-tighter text-os-black uppercase">
               I DON'T JUST<br/>
               CREATE CONTENT.<br/>
-              <span className="text-os-accent block mt-1">I DOCUMENT<br/>CAMPUS CULTURE.</span>
+              <span className="text-os-accent block mt-1.5">I DOCUMENT<br/>CAMPUS CULTURE.</span>
             </h2>
             <div className="w-12 h-[2px] bg-os-accent" />
-            <p className="font-mono text-[12px] text-os-black/75 max-w-xs leading-relaxed">
+            <p className="font-mono text-[13px] md:text-sm text-os-black/75 max-w-sm leading-relaxed">
               From dance floors to diverse minds, from fests to friendships, I capture it all and turn it into memories that last forever.
             </p>
           </div>
@@ -231,7 +227,7 @@ const ContentCreator = () => {
         {/* Middle Column: Hero Video Frame & Quick Stats */}
         <div className="xl:col-span-5 flex flex-col justify-center items-center relative pt-0 pb-6 xl:pb-0">
           
-          <div className="w-full flex items-center justify-between mb-2 px-1 max-w-[560px] mx-auto">
+          <div className="w-full flex items-center justify-between mb-2 px-1 max-w-[560px] mx-0 xl:mx-auto">
             <span className="font-mono text-[9px] uppercase tracking-widest text-os-black/40">// CAPTURING. CREATING. CONNECTING.</span>
             <span className="font-mono text-[9px] uppercase tracking-widest text-os-accent font-bold flex items-center gap-1">
               PLAY <span className="text-[7px]">▶</span>
@@ -239,7 +235,7 @@ const ContentCreator = () => {
           </div>
 
           {/* Holographic Video Player Mockup */}
-          <div className="relative max-w-[560px] mx-auto w-full aspect-[16/9] border border-os-black/15 bg-os-black rounded-lg overflow-hidden flex flex-col justify-end group shadow-[0_15px_35px_rgba(0,0,0,0.15)] pointer-events-auto cursor-pointer">
+          <div className="relative max-w-[560px] mx-0 xl:mx-auto w-full aspect-[16/9] border border-os-black/15 bg-os-black rounded-lg overflow-hidden flex flex-col justify-end group shadow-[0_15px_35px_rgba(0,0,0,0.15)] pointer-events-auto cursor-pointer">
             {/* Video Background Image (Grayscale crowd/camera view) */}
             <img 
               src="/image.png" 
@@ -269,7 +265,7 @@ const ContentCreator = () => {
           </div>
 
           {/* Quick Stats Grid */}
-          <div className="w-full max-w-[560px] mx-auto grid grid-cols-4 gap-2 mt-4">
+          <div className="w-full max-w-[560px] mx-0 xl:mx-auto grid grid-cols-4 gap-2 mt-4">
             {stats.map((stat, idx) => (
               <div key={idx} className="border border-os-black/10 bg-[#E8E4D9]/20 p-2.5 rounded text-center flex flex-col justify-center">
                 <span className="text-xl md:text-2xl font-heading font-black text-os-accent leading-none">{stat.value}</span>
@@ -280,7 +276,7 @@ const ContentCreator = () => {
           </div>
 
           {/* Creator Impact Archive — Extended Card */}
-          <div className="w-full max-w-[560px] mx-auto mt-4 border border-os-black/12 bg-os-white hover:border-os-accent/35 hover:shadow-[0_4px_24px_rgba(196,58,28,0.09)] transition-all duration-500 rounded-sm group cursor-default overflow-hidden">
+          <div className="w-full max-w-[560px] mx-0 xl:mx-auto mt-4 border border-os-black/12 bg-os-white hover:border-os-accent/35 hover:shadow-[0_4px_24px_rgba(196,58,28,0.09)] transition-all duration-500 rounded-sm group cursor-default overflow-hidden">
             <div className="flex items-stretch h-[130px]">
 
               {/* Left: Sample Certificate Photo */}
@@ -298,9 +294,9 @@ const ContentCreator = () => {
               </div>
 
               {/* Centre: Number block */}
-              <div className="flex flex-col justify-center items-center px-5 border-r border-os-black/8 shrink-0 min-w-[88px]">
+              <div className="flex flex-col justify-center items-start px-5 border-r border-os-black/8 shrink-0 min-w-[88px]">
                 <span className="font-heading font-black text-[42px] leading-none text-os-black group-hover:text-os-accent transition-colors duration-300">10+</span>
-                <span className="font-mono text-[6px] uppercase tracking-widest text-os-black/40 mt-1 text-center leading-tight">CERTIFICATES<br/>ISSUED</span>
+                <span className="font-mono text-[6px] uppercase tracking-widest text-os-black/40 mt-1 text-left leading-tight">CERTIFICATES<br/>ISSUED</span>
               </div>
 
               {/* Right: Archive label + description */}

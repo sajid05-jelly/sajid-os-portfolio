@@ -86,10 +86,6 @@ const Contact = () => {
             <h1 className="text-xl font-bold tracking-tighter text-os-black group-hover:opacity-80 transition-opacity">
               SAJID<span className="font-light text-os-accent">OS</span>
             </h1>
-            <span className="h-4 w-[1px] bg-os-black/10"></span>
-            <span className="font-mono text-xs uppercase tracking-widest text-os-accent font-bold">
-              Contact Archive 09
-            </span>
           </div>
           <p className="text-[10px] font-mono uppercase tracking-widest text-os-black/50 mt-0.5">
             Vol. 1 — Creative Protocol

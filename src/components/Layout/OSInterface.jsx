@@ -183,38 +183,6 @@ const OSInterface = () => {
             <h1 className="text-xl font-bold tracking-tighter text-os-black group-hover:opacity-80 transition-opacity">
               SAJID<span className="font-light text-os-accent">OS</span>
             </h1>
-            {location.pathname === '/skills' && (
-              <>
-                <span className="h-4 w-[1px] bg-os-black/10 hidden sm:inline xl:hidden"></span>
-                <span className="font-mono text-xs uppercase tracking-widest text-os-accent font-bold hidden sm:inline xl:hidden">
-                  Skill Archive 04
-                </span>
-              </>
-            )}
-            {location.pathname === '/about' && (
-              <>
-                <span className="h-4 w-[1px] bg-os-black/10 hidden sm:inline xl:hidden"></span>
-                <span className="font-mono text-xs uppercase tracking-widest text-os-accent font-bold hidden sm:inline xl:hidden">
-                  About Archive 03
-                </span>
-              </>
-            )}
-            {location.pathname === '/certifications' && (
-              <>
-                <span className="h-4 w-[1px] bg-os-black/10 hidden sm:inline xl:hidden"></span>
-                <span className="font-mono text-xs uppercase tracking-widest text-os-accent font-bold hidden sm:inline xl:hidden">
-                  Cert_Archive 01
-                </span>
-              </>
-            )}
-            {location.pathname === '/content-creator' && (
-              <>
-                <span className="h-4 w-[1px] bg-os-black/10 hidden sm:inline xl:hidden"></span>
-                <span className="font-mono text-xs uppercase tracking-widest text-os-accent font-bold hidden sm:inline xl:hidden">
-                  Content Archive 07
-                </span>
-              </>
-            )}
           </div>
           <p className="text-[10px] font-mono uppercase tracking-widest text-os-black/50 mt-0.5">
             Vol. 1 — Creative Protocol

@@ -137,12 +137,12 @@ const Certifications = () => {
 
         {/* Center Column: Museum Gallery Wall */}
         <div className="xl:col-span-6 flex flex-col justify-center px-2 xl:px-4">
-          <div className="text-center mb-3">
+          <div className="text-left mb-3">
             <span className="font-mono text-[9px] uppercase tracking-widest text-os-black/40">// MUSEUM GALLERY</span>
           </div>
 
           {/* Museum Exhibition Board: Premium 3D Gallery Alcove Wall */}
-          <div className="relative max-w-[560px] mx-auto w-full border-4 border-os-beige/50 bg-os-beige shadow-[inset_0_10px_30px_rgba(0,0,0,0.08),0_20px_50px_rgba(0,0,0,0.1)] rounded-lg overflow-hidden flex flex-col items-center">
+          <div className="relative max-w-[560px] mx-0 xl:mx-auto w-full border-4 border-os-beige/50 bg-os-beige shadow-[inset_0_10px_30px_rgba(0,0,0,0.08),0_20px_50px_rgba(0,0,0,0.1)] rounded-lg overflow-hidden flex flex-col items-start">
             
             {/* Top Ceiling Ledge (Moulding casting shadow) */}
             <div className="w-full h-3 bg-os-white border-b border-os-black/10 shadow-[0_2px_5px_rgba(0,0,0,0.08)] relative z-20" />
@@ -158,12 +158,12 @@ const Certifications = () => {
             </div>
 
             {/* Inner Wall Content Wrapper */}
-            <div className="w-full p-4 sm:p-5 pt-6 pb-4 relative z-10 flex flex-col items-center">
+            <div className="w-full p-4 sm:p-5 pt-6 pb-4 relative z-10 flex flex-col items-start">
               
               {/* Responsive Grid of Certificates */}
-              <div className="w-full grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-x-2 gap-y-3 items-center justify-items-center">
+              <div className="w-full grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-x-2 gap-y-3 items-center justify-items-start">
                 {certificates.map((cert, idx) => (
-                  <div key={idx} className="flex flex-col items-center group pointer-events-auto w-full max-w-[80px]">
+                  <div key={idx} className="flex flex-col items-start group pointer-events-auto w-full max-w-[80px]">
                     <div 
                       onClick={() => setSelectedCert(cert)}
                       className="w-full aspect-[4/3] border-2 border-os-black bg-white shadow-[2px_4px_10px_rgba(0,0,0,0.15)] rounded-[2px] p-1 cursor-pointer transform transition-all duration-300 hover:scale-110 hover:-translate-y-1 hover:shadow-[5px_10px_18px_rgba(0,0,0,0.25)] hover:border-os-accent z-10"
