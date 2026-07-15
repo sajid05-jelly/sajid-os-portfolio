@@ -48,7 +48,7 @@ const Contact = () => {
   }, []);
 
   return (
-    <div className="relative w-full h-full bg-[#F5F2EA] overflow-y-auto flex flex-col select-none">
+    <div className="relative w-full h-full bg-[#F5F2EA] overflow-y-auto overflow-x-hidden flex flex-col select-none">
 
       {/* Left side label */}
       <div 
@@ -137,10 +137,10 @@ const Contact = () => {
       </div>
 
       {/* Main Grid Area */}
-      <div className="max-w-[1400px] mx-auto w-full relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-start shrink-0 py-2 md:py-6 lg:py-2">
+      <div className="max-w-[1400px] mx-auto w-full relative z-10 grid grid-cols-1 xl:grid-cols-12 gap-8 items-start shrink-0 py-2 md:py-6 xl:py-2">
         
         {/* Left Section (Column Span 7) */}
-        <div className="lg:col-span-7 flex flex-col gap-6 text-left">
+        <div className="xl:col-span-7 flex flex-col gap-6 text-left">
           
           {/* Header Title & Archive Info side-by-side */}
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 border-b border-os-black/5 pb-6">
@@ -295,7 +295,7 @@ const Contact = () => {
         </div>
 
         {/* Right Section / Classified Folder Presentation (Column Span 5) */}
-        <div className="lg:col-span-5 flex flex-col items-center justify-center relative min-h-[480px]">
+        <div className="xl:col-span-5 flex flex-col items-center justify-center relative min-h-[480px]">
           
           {/* Main Folder Backplane */}
           <div className="relative w-full max-w-[380px] aspect-[1/1.25] bg-[#D8C7B0] rounded-lg shadow-2xl border border-os-black/15 p-5 flex flex-col justify-between overflow-hidden">

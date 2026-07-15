@@ -104,7 +104,7 @@ const ContentCreator = () => {
 
       {/* Left side label */}
       <div 
-        className="absolute left-3 top-1/2 -translate-y-1/2 z-30 pointer-events-none transition-all duration-500 ease-out origin-center hidden lg:block"
+        className="absolute left-3 top-1/2 -translate-y-1/2 z-30 pointer-events-none transition-all duration-500 ease-out origin-center hidden xl:block"
         style={{ 
           writingMode: 'vertical-rl',
           transform: `translateY(-50%) rotate(-180deg) scale(${mouseZone === 'left' ? 1.6 : 1.0})` 
@@ -117,7 +117,7 @@ const ContentCreator = () => {
 
       {/* Right side label */}
       <div 
-        className="absolute right-3 top-1/2 -translate-y-1/2 z-30 pointer-events-none transition-all duration-500 ease-out origin-center hidden lg:block"
+        className="absolute right-3 top-1/2 -translate-y-1/2 z-30 pointer-events-none transition-all duration-500 ease-out origin-center hidden xl:block"
         style={{ 
           writingMode: 'vertical-rl',
           transform: `translateY(-50%) scale(${mouseZone === 'right' ? 1.6 : 1.0})` 
@@ -148,7 +148,7 @@ const ContentCreator = () => {
           </p>
         </NavLink>
 
-        <nav className="hidden lg:flex items-center gap-7 xl:gap-8 font-mono text-[10px] xl:text-xs uppercase tracking-widest text-os-black/60">
+        <nav className="hidden xl:flex items-center gap-7 xl:gap-8 font-mono text-[10px] xl:text-xs uppercase tracking-widest text-os-black/60">
           <NavLink to="/about" className="hover:text-os-accent transition-colors duration-300">About Me</NavLink>
           <NavLink to="/skills" className="hover:text-os-accent transition-colors duration-300">Skills</NavLink>
           <NavLink to="/projects" className="hover:text-os-accent transition-colors duration-300">Projects</NavLink>
@@ -171,7 +171,7 @@ const ContentCreator = () => {
           {/* Mobile Menu Toggle Button */}
           <button 
             onClick={() => setMenuOpen(!menuOpen)}
-            className="lg:hidden pointer-events-auto flex flex-col gap-1 items-center justify-center w-8 h-8 rounded border border-os-black/15 bg-[#E8E4D9]/20 hover:border-os-accent/35 transition-all duration-300 relative z-50 cursor-pointer"
+            className="xl:hidden pointer-events-auto flex flex-col gap-1 items-center justify-center w-8 h-8 rounded border border-os-black/15 bg-[#E8E4D9]/20 hover:border-os-accent/35 transition-all duration-300 relative z-50 cursor-pointer"
             aria-label="Toggle Menu"
           >
             <span className={`w-4 h-[1.5px] bg-os-black transition-all duration-300 ${menuOpen ? 'rotate-45 translate-y-[3.5px]' : ''}`} />
@@ -187,10 +187,10 @@ const ContentCreator = () => {
       </div>
 
       {/* Main Grid: Left, Middle, Right Column Panels */}
-      <div className="max-w-[1400px] mx-auto w-full relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-6 items-start shrink-0 py-2">
+      <div className="max-w-[1400px] mx-auto w-full relative z-10 grid grid-cols-1 xl:grid-cols-12 gap-8 xl:gap-6 items-start shrink-0 py-2">
         
         {/* Left Column: Headline & Description */}
-        <div className="lg:col-span-3 flex flex-col justify-between h-auto text-left lg:pl-10 space-y-6 pb-6 lg:pb-0">
+        <div className="xl:col-span-3 flex flex-col justify-between h-auto text-left xl:pl-10 space-y-6 pb-6 xl:pb-0">
           <div className="space-y-4">
             <span className="font-mono text-[11px] text-os-accent font-bold tracking-widest">// CREATOR CONCEPT</span>
             <h2 className="text-4xl md:text-[40px] font-heading font-black leading-[0.95] tracking-tighter text-os-black uppercase">
@@ -229,7 +229,7 @@ const ContentCreator = () => {
         </div>
 
         {/* Middle Column: Hero Video Frame & Quick Stats */}
-        <div className="lg:col-span-5 flex flex-col justify-center items-center relative pt-0 pb-6 lg:pb-0">
+        <div className="xl:col-span-5 flex flex-col justify-center items-center relative pt-0 pb-6 xl:pb-0">
           
           <div className="w-full flex items-center justify-between mb-2 px-1 max-w-[560px] mx-auto">
             <span className="font-mono text-[9px] uppercase tracking-widest text-os-black/40">// CAPTURING. CREATING. CONNECTING.</span>
@@ -326,7 +326,7 @@ const ContentCreator = () => {
         </div>
 
         {/* Right Column: Social Metrics & Tools */}
-        <div className="lg:col-span-4 flex flex-col justify-between h-auto text-left space-y-6 lg:pr-10 pb-6 lg:pb-0">
+        <div className="xl:col-span-4 flex flex-col justify-between h-auto text-left space-y-6 xl:pr-10 pb-6 xl:pb-0">
           
           {/* Social Stats Block */}
           <div className="space-y-2">
@@ -474,10 +474,10 @@ const ContentCreator = () => {
       </div>
 
       {/* Row 3: Creator Journey (Timeline) & Quote Box */}
-      <div className="max-w-[1400px] mx-auto w-full border-t border-os-black/15 pt-4 pb-2 grid grid-cols-1 lg:grid-cols-12 gap-6 relative z-10 shrink-0">
+      <div className="max-w-[1400px] mx-auto w-full border-t border-os-black/15 pt-4 pb-2 grid grid-cols-1 xl:grid-cols-12 gap-6 relative z-10 shrink-0">
         
         {/* Left/Center: Timeline Horizontal Node */}
-        <div className="lg:col-span-8 flex flex-col lg:flex-row items-start lg:items-center gap-6 lg:border-r border-os-black/5 pr-4 text-left pb-6 lg:pb-0">
+        <div className="xl:col-span-8 flex flex-col xl:flex-row items-start xl:items-center gap-6 xl:border-r border-os-black/5 pr-4 text-left pb-6 xl:pb-0">
           
           <div className="bg-os-accent text-white font-mono text-[9px] font-bold tracking-widest py-2 px-3 rounded uppercase leading-none min-w-[120px] text-center">
             // CREATOR JOURNEY ➔
@@ -503,7 +503,7 @@ const ContentCreator = () => {
         </div>
 
         {/* Right: Quote Box */}
-        <div className="lg:col-span-4 bg-[#1A1918] text-white rounded-md p-4 flex items-center justify-between gap-4 relative overflow-hidden text-left shadow-lg">
+        <div className="xl:col-span-4 bg-[#1A1918] text-white rounded-md p-4 flex items-center justify-between gap-4 relative overflow-hidden text-left shadow-lg">
           <div className="space-y-2 flex-1 pr-2 z-10">
             <span className="text-os-accent text-xl font-black font-serif leading-none block">“</span>
             <p className="font-mono text-[8px] tracking-wider uppercase leading-relaxed text-white/80">

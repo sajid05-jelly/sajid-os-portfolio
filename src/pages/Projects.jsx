@@ -348,7 +348,7 @@ const Projects = () => {
   if (selectedProject !== null) {
     const p = projectsData[selectedProject];
     return (
-      <div className="relative w-full h-full lg:h-full pt-20 lg:pt-[45px] pb-8 px-6 md:px-16 pointer-events-auto overflow-y-auto overflow-x-hidden lg:overflow-y-hidden bg-[#F5F2EA] flex flex-col gap-2 select-none">
+      <div className="relative w-full h-full xl:h-full pt-20 xl:pt-[45px] pb-8 px-6 md:px-16 pointer-events-auto overflow-y-auto overflow-x-hidden xl:overflow-y-hidden bg-[#F5F2EA] flex flex-col gap-2 select-none">
         
         {/* Large Background Watermark Text */}
         <div className="absolute inset-0 pointer-events-none z-0 flex items-center justify-center overflow-hidden opacity-[0.03] select-none">
@@ -371,10 +371,10 @@ const Projects = () => {
         </div>
 
         {/* Main Grid structure exactly as mock 2 */}
-        <div className="max-w-[1400px] mx-auto w-full relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-5 items-start py-4 lg:py-0">
+        <div className="max-w-[1400px] mx-auto w-full relative z-10 grid grid-cols-1 xl:grid-cols-12 gap-8 xl:gap-5 items-start py-4 xl:py-0">
           
           {/* Column 1: Left Index Panel (Span 3) */}
-          <div className="lg:col-span-3 flex flex-col gap-4 text-left lg:border-r border-os-black/5 lg:pr-4">
+          <div className="xl:col-span-3 flex flex-col gap-4 text-left xl:border-r border-os-black/5 xl:pr-4">
             <div>
               <span className="font-mono text-[9px] text-os-black/45 tracking-widest uppercase">// PROJECT INDEX</span>
               <div className="flex items-baseline gap-2 mt-3 mb-2">
@@ -604,7 +604,7 @@ const Projects = () => {
           </div>
 
           {/* Column 2: Selected Project description block (Span 5) */}
-          <div className="lg:col-span-5 flex flex-col gap-4 lg:gap-2 text-left lg:border-r border-os-black/5 lg:pr-4">
+          <div className="xl:col-span-5 flex flex-col gap-4 xl:gap-2 text-left xl:border-r border-os-black/5 xl:pr-4">
             
             <div className="space-y-2">
               <span className="font-mono text-[9px] text-os-accent font-bold tracking-widest uppercase">// SELECTED PROJECT</span>
@@ -731,7 +731,7 @@ const Projects = () => {
           </div>
 
           {/* Column 3: Mockup & Tech highlights (Span 4) */}
-          <div className="lg:col-span-4 flex flex-col gap-3.5 text-left lg:pl-2 w-full">
+          <div className="xl:col-span-4 flex flex-col gap-3.5 text-left xl:pl-2 w-full">
             
             {/* Primary Browser Mockup Window */}
             <div className="w-full aspect-[1.45/1] bg-white border border-os-black/12 rounded-lg shadow-md overflow-hidden flex flex-col relative animate-fade-in">
@@ -1006,7 +1006,7 @@ const Projects = () => {
   }
 
   return (
-    <div className="relative w-full h-full lg:h-full pt-36 md:pt-16 pb-24 px-6 md:px-16 pointer-events-auto overflow-y-auto overflow-x-hidden lg:overflow-y-hidden bg-[#F5F2EA] flex flex-col justify-start lg:justify-center select-none">
+    <div className="relative w-full h-full xl:h-full pt-36 md:pt-16 pb-24 px-6 md:px-16 pointer-events-auto overflow-y-auto overflow-x-hidden xl:overflow-y-hidden bg-[#F5F2EA] flex flex-col justify-start xl:justify-center select-none">
       
       {/* Large Background Watermark Text */}
       <div className="absolute inset-0 pointer-events-none z-0 flex items-center justify-center overflow-hidden opacity-[0.02] select-none">
@@ -1022,10 +1022,10 @@ const Projects = () => {
         </svg>
       </div>
 
-      <div className="max-w-[1400px] mx-auto w-full relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+      <div className="max-w-[1400px] mx-auto w-full relative z-10 grid grid-cols-1 xl:grid-cols-12 gap-8 xl:gap-12 items-center">
         
         {/* Left Column: Heading, Info, and Controls */}
-        <div className="lg:col-span-4 flex flex-col gap-6 py-2 z-20 text-left">
+        <div className="xl:col-span-4 flex flex-col gap-6 py-2 z-20 text-left">
           <div className="space-y-6">
             <h2 className="text-4xl sm:text-5xl md:text-6xl font-heading font-black leading-none tracking-tight text-os-black">
               SELECTED<br/>
@@ -1041,7 +1041,7 @@ const Projects = () => {
             </div>
           </div>
 
-          <div className="space-y-6 pt-12 lg:pt-0">
+          <div className="space-y-6 pt-12 xl:pt-0">
             <span 
               onClick={() => setSelectedProject(activeIndex)}
               className="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-widest text-os-accent font-bold hover:underline cursor-pointer pointer-events-auto"
@@ -1083,7 +1083,7 @@ const Projects = () => {
         </div>
 
         {/* Right Column: 3D Stacked Cover Flow Carousel */}
-        <div className="lg:col-span-8 flex items-center justify-center w-full h-[420px] sm:h-[480px] md:h-[580px] relative overflow-visible py-8 z-10">
+        <div className="xl:col-span-8 flex items-center justify-center w-full h-[420px] sm:h-[480px] md:h-[580px] relative overflow-visible py-8 z-10">
           <div 
             className="w-full h-full relative flex items-center justify-center overflow-visible pointer-events-auto translate-y-4 md:translate-y-8"
             style={{ perspective: '1200px', transformStyle: 'preserve-3d' }}

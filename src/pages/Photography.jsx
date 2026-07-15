@@ -247,7 +247,7 @@ const Photography = () => {
 
       {/* Left side archive label */}
       <div
-        className="absolute left-2 top-1/2 -translate-y-1/2 z-30 pointer-events-none transition-all duration-500 ease-out origin-center hidden lg:block"
+        className="absolute left-2 top-1/2 -translate-y-1/2 z-30 pointer-events-none transition-all duration-500 ease-out origin-center hidden xl:block"
         style={{ transform: `translateY(-50%) rotate(-180deg) scale(${mouseZone === 'left' ? 1.6 : 1.0})` }}
       >
         <span
@@ -260,7 +260,7 @@ const Photography = () => {
 
       {/* Right side archive label */}
       <div
-        className="absolute right-2 top-1/2 -translate-y-1/2 z-30 pointer-events-none transition-all duration-500 ease-out origin-center hidden lg:block"
+        className="absolute right-2 top-1/2 -translate-y-1/2 z-30 pointer-events-none transition-all duration-500 ease-out origin-center hidden xl:block"
         style={{ transform: `translateY(-50%) scale(${mouseZone === 'right' ? 1.6 : 1.0})` }}
       >
         <span

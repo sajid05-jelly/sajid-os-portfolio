@@ -52,17 +52,17 @@ const Skills = () => {
   ];
 
   return (
-    <div className="relative w-full h-full pt-16 pb-10 px-6 md:px-16 pointer-events-auto overflow-y-auto bg-[#F5F2EA] flex flex-col justify-between select-none">
+    <div className="relative w-full h-full pt-16 pb-10 px-6 md:px-16 pointer-events-auto overflow-y-auto overflow-x-hidden bg-[#F5F2EA] flex flex-col justify-between select-none">
       
       {/* Giant Background Watermark Outline Text */}
       <div className="absolute inset-0 flex flex-col justify-center items-center pointer-events-none z-0 opacity-[0.03]">
         <h1 className="text-[12vw] font-heading font-black tracking-tighter leading-none text-os-black">SYSTEM</h1>
       </div>
 
-      <div className="max-w-[1400px] mx-auto w-full relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-4 items-center flex-1 py-6 lg:py-2">
+      <div className="max-w-[1400px] mx-auto w-full relative z-10 grid grid-cols-1 xl:grid-cols-12 gap-8 xl:gap-4 items-center flex-1 py-6 xl:py-2">
         
         {/* Left Column: Intro */}
-        <div className="lg:col-span-3 flex flex-col justify-between h-auto py-2 text-left lg:pl-10">
+        <div className="xl:col-span-3 flex flex-col justify-between h-auto py-2 text-left xl:pl-10">
           <div className="space-y-4">
             <span className="font-mono text-[11px] text-os-accent font-bold tracking-widest">// SKILLS</span>
             <h2 className="text-4xl md:text-5xl font-heading font-black leading-none tracking-tighter text-os-black uppercase">
@@ -91,12 +91,12 @@ const Skills = () => {
         </div>
 
         {/* Center Column: Matrix Panels */}
-        <div className="lg:col-span-6 flex flex-col justify-center px-2 lg:px-4 lg:-ml-12">
+        <div className="xl:col-span-6 flex flex-col justify-center px-2 xl:px-4 xl:-ml-12">
           <div className="text-center mb-6">
             <span className="font-mono text-[9px] uppercase tracking-widest text-os-black/40">SKILL MATRIX</span>
           </div>
           
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-x-4 gap-y-10 lg:gap-3 items-start relative">
+          <div className="grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-5 gap-x-4 gap-y-10 xl:gap-3 items-start relative">
             {panels.map((panel, idx) => (
               <div key={idx} className="flex flex-col items-center">
                 
@@ -145,7 +145,7 @@ const Skills = () => {
         </div>
 
         {/* Right Column: Core Stack & Status */}
-        <div className="lg:col-span-3 flex flex-col justify-between h-auto text-left space-y-6 lg:pr-10">
+        <div className="xl:col-span-3 flex flex-col justify-between h-auto text-left space-y-6 xl:pr-10">
           
           {/* Core Stack Block */}
           <div className="space-y-3">

@@ -185,32 +185,32 @@ const OSInterface = () => {
             </h1>
             {location.pathname === '/skills' && (
               <>
-                <span className="h-4 w-[1px] bg-os-black/10 hidden sm:inline"></span>
-                <span className="font-mono text-xs uppercase tracking-widest text-os-accent font-bold hidden sm:inline">
+                <span className="h-4 w-[1px] bg-os-black/10 hidden sm:inline xl:hidden"></span>
+                <span className="font-mono text-xs uppercase tracking-widest text-os-accent font-bold hidden sm:inline xl:hidden">
                   Skill Archive 04
                 </span>
               </>
             )}
             {location.pathname === '/about' && (
               <>
-                <span className="h-4 w-[1px] bg-os-black/10 hidden sm:inline"></span>
-                <span className="font-mono text-xs uppercase tracking-widest text-os-accent font-bold hidden sm:inline">
+                <span className="h-4 w-[1px] bg-os-black/10 hidden sm:inline xl:hidden"></span>
+                <span className="font-mono text-xs uppercase tracking-widest text-os-accent font-bold hidden sm:inline xl:hidden">
                   About Archive 03
                 </span>
               </>
             )}
             {location.pathname === '/certifications' && (
               <>
-                <span className="h-4 w-[1px] bg-os-black/10 hidden sm:inline"></span>
-                <span className="font-mono text-xs uppercase tracking-widest text-os-accent font-bold hidden sm:inline">
+                <span className="h-4 w-[1px] bg-os-black/10 hidden sm:inline xl:hidden"></span>
+                <span className="font-mono text-xs uppercase tracking-widest text-os-accent font-bold hidden sm:inline xl:hidden">
                   Cert_Archive 01
                 </span>
               </>
             )}
             {location.pathname === '/content-creator' && (
               <>
-                <span className="h-4 w-[1px] bg-os-black/10 hidden sm:inline"></span>
-                <span className="font-mono text-xs uppercase tracking-widest text-os-accent font-bold hidden sm:inline">
+                <span className="h-4 w-[1px] bg-os-black/10 hidden sm:inline xl:hidden"></span>
+                <span className="font-mono text-xs uppercase tracking-widest text-os-accent font-bold hidden sm:inline xl:hidden">
                   Content Archive 07
                 </span>
               </>
@@ -222,7 +222,7 @@ const OSInterface = () => {
         </NavLink>
 
         {/* Center Navigation Menu */}
-        <nav className="hidden lg:flex items-center gap-7 xl:gap-8 font-mono text-[10px] xl:text-xs uppercase tracking-widest text-os-black/60">
+        <nav className="hidden xl:flex items-center gap-7 xl:gap-8 font-mono text-[10px] xl:text-xs uppercase tracking-widest text-os-black/60">
           <NavLink to="/about" className={({ isActive }) => `hover:text-os-accent transition-colors duration-300 ${isActive ? 'text-os-accent font-bold' : ''}`}>
             About Me
           </NavLink>
@@ -279,7 +279,7 @@ const OSInterface = () => {
           {/* Mobile Menu Toggle Button */}
           <button 
             onClick={() => setMenuOpen(!menuOpen)}
-            className="lg:hidden pointer-events-auto flex flex-col gap-1 items-center justify-center w-8 h-8 rounded border border-os-black/15 bg-[#E8E4D9]/20 hover:border-os-accent/35 transition-all duration-300 relative z-50 cursor-pointer"
+            className="xl:hidden pointer-events-auto flex flex-col gap-1 items-center justify-center w-8 h-8 rounded border border-os-black/15 bg-[#E8E4D9]/20 hover:border-os-accent/35 transition-all duration-300 relative z-50 cursor-pointer"
             aria-label="Toggle Menu"
           >
             <span className={`w-4 h-[1.5px] bg-os-black transition-all duration-300 ${menuOpen ? 'rotate-45 translate-y-[3.5px]' : ''}`} />
@@ -294,7 +294,7 @@ const OSInterface = () => {
       {location.pathname !== '/content-creator' && location.pathname !== '/artwork' && (
         <>
           <div 
-            className="absolute left-8 top-1/2 transition-all duration-500 ease-out origin-center pointer-events-auto hidden lg:block" 
+            className="absolute left-8 top-1/2 transition-all duration-500 ease-out origin-center pointer-events-auto hidden xl:block" 
             style={{ 
               writingMode: 'vertical-rl',
               transform: `translateY(-50%) rotate(-180deg) scale(${mouseZone === 'left' ? 1.6 : 1.0})`,
@@ -316,7 +316,7 @@ const OSInterface = () => {
 
           {location.pathname !== '/projects' && (
             <div 
-              className={`absolute right-8 ${getVerticalNav().rightTop} transition-all duration-500 ease-out origin-center pointer-events-auto hidden lg:block`}
+              className={`absolute right-8 ${getVerticalNav().rightTop} transition-all duration-500 ease-out origin-center pointer-events-auto hidden xl:block`}
               style={{ 
                 writingMode: 'vertical-rl',
                 transform: `translateY(-50%) scale(${mouseZone === 'right' ? 1.6 : 1.0})`,

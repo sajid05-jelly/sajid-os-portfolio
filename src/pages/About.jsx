@@ -32,10 +32,10 @@ const About = () => {
         <h1 className="text-[12vw] font-heading font-black tracking-tighter leading-none text-os-black mt-[-2vw]">SAJID</h1>
       </div>
 
-      <div className="max-w-[1400px] mx-auto w-full relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center flex-1 py-6 lg:py-2">
+      <div className="max-w-[1400px] mx-auto w-full relative z-10 grid grid-cols-1 xl:grid-cols-12 gap-8 items-center flex-1 py-6 xl:py-2">
         
         {/* Left Column: Intro */}
-        <div className="lg:col-span-4 flex flex-col justify-between h-auto py-2 text-left lg:pl-10">
+        <div className="xl:col-span-4 flex flex-col justify-between h-auto py-2 text-left xl:pl-10">
           <div className="space-y-4">
             <span className="font-mono text-[11px] text-os-accent font-bold tracking-widest">// INTRO</span>
             <h2 className="text-4xl md:text-5xl font-heading font-black leading-none tracking-tighter text-os-black uppercase">
@@ -79,7 +79,7 @@ const About = () => {
         </div>
 
         {/* Center Column: 4-Point Cycle Circle Graphic */}
-        <div className="lg:col-span-4 flex items-center justify-center pt-6 pb-28 lg:py-0">
+        <div className="xl:col-span-4 flex items-center justify-center pt-6 pb-28 xl:py-0">
           <div className="relative w-60 h-60 sm:w-72 sm:h-72 md:w-[330px] md:h-[330px] flex items-center justify-center">
             
             {/* 1. Giant Circular Profile Image (Base Layer) */}
@@ -150,7 +150,7 @@ const About = () => {
         </div>
 
         {/* Right Column: Info & Connect */}
-        <div className="lg:col-span-4 flex flex-col justify-between h-auto text-left space-y-6 lg:pr-10">
+        <div className="xl:col-span-4 flex flex-col justify-between h-auto text-left space-y-6 xl:pr-10">
           
           {/* Info Block */}
           <div className="space-y-3">
@@ -213,7 +213,7 @@ const About = () => {
         ))}
       </div>
 
-      <div className="relative lg:absolute bottom-0 left-0 w-full bg-[#E5E2D9] py-1 pb-4 lg:pb-1 overflow-hidden pointer-events-none select-none z-0 border-t border-os-black/5 mt-8 lg:mt-0">
+      <div className="relative xl:absolute bottom-0 left-0 w-full bg-[#E5E2D9] py-1 pb-4 xl:pb-1 overflow-hidden pointer-events-none select-none z-0 border-t border-os-black/5 mt-8 xl:mt-0">
         <div className="flex gap-4 items-center whitespace-nowrap animate-[marquee_6s_linear_infinite] font-mono text-[8px] font-bold uppercase tracking-[0.25em] text-os-accent">
           <span>✦ CREATIVE THINKER</span>
           <span>— PROBLEM SOLVER</span>

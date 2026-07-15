@@ -78,17 +78,17 @@ const Certifications = () => {
   };
 
   return (
-    <div className="relative w-full h-full lg:h-full pt-16 pb-16 px-6 md:px-16 pointer-events-auto overflow-y-auto lg:overflow-y-hidden bg-[#F5F2EA] flex flex-col justify-between select-none">
+    <div className="relative w-full h-full xl:h-full pt-16 pb-16 px-6 md:px-16 pointer-events-auto overflow-y-auto xl:overflow-y-hidden bg-[#F5F2EA] flex flex-col justify-between select-none">
       
       {/* Giant Background Watermark Outline Text */}
       <div className="absolute inset-0 flex flex-col justify-center items-center pointer-events-none z-0 opacity-[0.02]">
         <h1 className="text-[12vw] font-heading font-black tracking-tighter leading-none text-os-black">ARCHIVE</h1>
       </div>
 
-      <div className="max-w-[1400px] mx-auto w-full relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-4 items-center flex-1 py-6 lg:py-2">
+      <div className="max-w-[1400px] mx-auto w-full relative z-10 grid grid-cols-1 xl:grid-cols-12 gap-8 xl:gap-4 items-center flex-1 py-6 xl:py-2">
         
         {/* Left Column: Intro */}
-        <div className="lg:col-span-3 flex flex-col justify-between h-auto py-2 text-left lg:pl-10">
+        <div className="xl:col-span-3 flex flex-col justify-between h-auto py-2 text-left xl:pl-10">
           <div className="space-y-4">
             <span className="font-mono text-[11px] text-os-accent font-bold tracking-widest">// CERTIFICATES</span>
             <h2 className="text-4xl md:text-[40px] font-heading font-black leading-[0.95] tracking-tighter text-os-black uppercase">
@@ -136,7 +136,7 @@ const Certifications = () => {
         </div>
 
         {/* Center Column: Museum Gallery Wall */}
-        <div className="lg:col-span-6 flex flex-col justify-center px-2 lg:px-4">
+        <div className="xl:col-span-6 flex flex-col justify-center px-2 xl:px-4">
           <div className="text-center mb-3">
             <span className="font-mono text-[9px] uppercase tracking-widest text-os-black/40">// MUSEUM GALLERY</span>
           </div>
@@ -199,7 +199,7 @@ const Certifications = () => {
         </div>
 
         {/* Right Column: Domain Filter & Archive Info */}
-        <div className="lg:col-span-3 flex flex-col justify-between h-auto text-left space-y-6 lg:pr-10">
+        <div className="xl:col-span-3 flex flex-col justify-between h-auto text-left space-y-6 xl:pr-10">
           
           {/* Domain Filter Block */}
           <div className="space-y-3">
