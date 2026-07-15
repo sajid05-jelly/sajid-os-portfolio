@@ -111,7 +111,7 @@ const Home = () => {
         {/* Layer 28: Midground Identity Main Heading Behind Portrait but in front of circle */}
         <div 
           ref={fgTextRef} 
-          className="absolute z-28 right-[10vw] md:right-14 bottom-[30%] md:bottom-[27%] flex flex-col items-end pointer-events-none transform-gpu text-right"
+          className="absolute z-28 right-[25vw] md:right-14 bottom-[30%] md:bottom-[27%] flex flex-col items-end pointer-events-none transform-gpu text-right"
           style={{ transform: 'translateZ(60px)', transformStyle: 'preserve-3d' }}
         >
           <h2 className="text-3xl sm:text-4xl md:text-6xl font-heading font-black text-os-black/40 leading-none tracking-wider select-none uppercase">
@@ -123,7 +123,7 @@ const Home = () => {
         </div>
 
         {/* Left Side Content Column: Crafting Digital Experiences (Foreground) */}
-        <div className="absolute left-6 md:left-[8vw] top-[28%] sm:top-[45%] -translate-y-1/2 z-30 max-w-[280px] sm:max-w-xl text-left pointer-events-none flex flex-col items-start">
+        <div className="absolute left-6 md:left-[8vw] top-[130px] sm:top-[45%] sm:-translate-y-1/2 z-30 max-w-[280px] sm:max-w-xl text-left pointer-events-none flex flex-col items-start">
           
           {/* Retro Theme Toggle Switch (Homepage Spec) */}
           <div className="flex items-center gap-3 mb-6 pointer-events-auto select-none">
@@ -180,7 +180,7 @@ const Home = () => {
         {/* Shared Accent Backdrop Group: Centers both red circle and outer rotating rings */}
         <div 
           ref={backdropRef}
-          className="absolute right-[16vw] sm:right-[12vw] md:right-[26vw] bottom-[10vh] md:bottom-[15vh] w-[180px] h-[180px] sm:w-[260px] sm:h-[260px] md:w-[380px] md:h-[380px] flex items-center justify-center pointer-events-none z-10 transform-gpu"
+          className="absolute right-[20vw] sm:right-[12vw] md:right-[26vw] bottom-[10vh] md:bottom-[15vh] w-[180px] h-[180px] sm:w-[260px] sm:h-[260px] md:w-[380px] md:h-[380px] flex items-center justify-center pointer-events-none z-10 transform-gpu"
         >
           
           {/* Layer 10: Contour Circles (Sized to medium/large proportions relative to solid circle) */}
@@ -222,7 +222,7 @@ const Home = () => {
           ref={portraitRef}
           src="/portrait.png"
           alt="Digital Artist Portrait"
-          className="absolute z-30 right-[5vw] sm:right-[10vw] md:right-[25vw] translate-x-[10px] sm:translate-x-[20px] bottom-[36px] h-[45vh] sm:h-[65vh] md:h-[75vh] w-auto object-contain object-bottom drop-shadow-sm grayscale pointer-events-none transform-gpu"
+          className="absolute z-30 right-[8vw] sm:right-[10vw] md:right-[25vw] translate-x-0 sm:translate-x-[20px] bottom-[36px] h-[45vh] sm:h-[65vh] md:h-[75vh] w-auto object-contain object-bottom drop-shadow-sm grayscale pointer-events-none transform-gpu"
           style={{ transformStyle: 'preserve-3d', transform: 'translateZ(80px)' }}
         />
       </motion.div>
