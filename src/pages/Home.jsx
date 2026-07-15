@@ -123,7 +123,7 @@ const Home = () => {
         </div>
 
         {/* Left Side Content Column: Crafting Digital Experiences (Foreground) */}
-        <div className="absolute left-6 md:left-[8vw] top-[100px] md:top-[8%] lg:top-[45%] lg:-translate-y-1/2 z-30 max-w-[280px] sm:max-w-xl text-left pointer-events-none flex flex-col items-start">
+        <div className="absolute left-6 md:left-[8vw] top-[75px] md:top-[4%] lg:top-[45%] lg:-translate-y-1/2 z-30 max-w-[280px] sm:max-w-xl text-left pointer-events-none flex flex-col items-start">
           
           {/* Retro Theme Toggle Switch (Homepage Spec) */}
           <div className="flex items-center gap-3 mb-6 pointer-events-auto select-none">
