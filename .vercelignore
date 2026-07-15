@@ -1,0 +1,8 @@
+node_modules
+.git
+.gemini
+dist
+.agents
+.system_generated
+.oxlintrc.json
+package-lock.json

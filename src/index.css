@@ -1,0 +1,366 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --os-white: #F5F2EA;
+  --os-white-95: rgba(245, 242, 234, 0.95);
+  --os-white-60: rgba(245, 242, 234, 0.60);
+  --os-beige: #E3DAC9;
+  --os-beige-50: rgba(227, 218, 201, 0.50);
+  --os-black: #1A1918;
+  --os-black-85: rgba(26, 25, 24, 0.85);
+  --os-black-75: rgba(26, 25, 24, 0.75);
+  --os-black-70: rgba(26, 25, 24, 0.70);
+  --os-black-60: rgba(26, 25, 24, 0.60);
+  --os-black-55: rgba(26, 25, 24, 0.55);
+  --os-black-50: rgba(26, 25, 24, 0.50);
+  --os-black-45: rgba(26, 25, 24, 0.45);
+  --os-black-40: rgba(26, 25, 24, 0.40);
+  --os-black-35: rgba(26, 25, 24, 0.35);
+  --os-black-30: rgba(26, 25, 24, 0.30);
+  --os-black-20: rgba(26, 25, 24, 0.20);
+  --os-black-15: rgba(26, 25, 24, 0.15);
+  --os-black-12: rgba(26, 25, 24, 0.12);
+  --os-black-10: rgba(26, 25, 24, 0.10);
+  --os-black-8: rgba(26, 25, 24, 0.08);
+  --os-black-5: rgba(26, 25, 24, 0.05);
+}
+
+.dark-theme {
+  --os-white: #0D0C0B;
+  --os-white-95: rgba(13, 12, 11, 0.95);
+  --os-white-60: rgba(13, 12, 11, 0.60);
+  --os-beige: #1C1A19;
+  --os-beige-50: rgba(28, 26, 25, 0.50);
+  --os-black: #F5F2EA;
+  --os-black-85: rgba(245, 242, 234, 0.85);
+  --os-black-75: rgba(245, 242, 234, 0.75);
+  --os-black-70: rgba(245, 242, 234, 0.70);
+  --os-black-60: rgba(245, 242, 234, 0.60);
+  --os-black-55: rgba(245, 242, 234, 0.55);
+  --os-black-50: rgba(245, 242, 234, 0.50);
+  --os-black-45: rgba(245, 242, 234, 0.45);
+  --os-black-40: rgba(245, 242, 234, 0.40);
+  --os-black-35: rgba(245, 242, 234, 0.35);
+  --os-black-30: rgba(245, 242, 234, 0.30);
+  --os-black-20: rgba(245, 242, 234, 0.20);
+  --os-black-15: rgba(245, 242, 234, 0.15);
+  --os-black-12: rgba(245, 242, 234, 0.12);
+  --os-black-10: rgba(245, 242, 234, 0.10);
+  --os-black-8: rgba(245, 242, 234, 0.08);
+  --os-black-5: rgba(245, 242, 234, 0.05);
+}
+
+/* Global Class Overrides for Hardcoded Hex Values & Opacity Helpers */
+.bg-os-white {
+  background-color: var(--os-white) !important;
+}
+.bg-os-beige {
+  background-color: var(--os-beige) !important;
+}
+.border-os-beige {
+  border-color: var(--os-beige) !important;
+}
+.border-os-beige\/50 {
+  border-color: var(--os-beige-50) !important;
+}
+.bg-os-white\/95 {
+  background-color: var(--os-white-95) !important;
+}
+.bg-os-white\/60 {
+  background-color: var(--os-white-60) !important;
+}
+.bg-\[\#F5F2EA\] {
+  background-color: var(--os-white) !important;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.bg-\[\#F5F2EB\] {
+  background-color: var(--os-white) !important;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.bg-\[\#E8E4D9\]\/20 {
+  background-color: var(--os-black-5) !important;
+}
+.text-os-black {
+  color: var(--os-black) !important;
+}
+.text-os-black\/85 {
+  color: var(--os-black-85) !important;
+}
+.text-os-black\/75 {
+  color: var(--os-black-75) !important;
+}
+.text-os-black\/70 {
+  color: var(--os-black-70) !important;
+}
+.text-os-black\/60 {
+  color: var(--os-black-60) !important;
+}
+.text-os-black\/55 {
+  color: var(--os-black-55) !important;
+}
+.fill-os-black\/70 {
+  fill: var(--os-black-70) !important;
+}
+.text-os-black\/50 {
+  color: var(--os-black-50) !important;
+}
+.text-os-black\/45 {
+  color: var(--os-black-45) !important;
+}
+.text-os-black\/40 {
+  color: var(--os-black-40) !important;
+}
+.text-os-black\/35 {
+  color: var(--os-black-35) !important;
+}
+.text-os-black\/30 {
+  color: var(--os-black-30) !important;
+}
+.border-os-black\/10 {
+  border-color: var(--os-black-10) !important;
+}
+.border-os-black\/12 {
+  border-color: var(--os-black-12) !important;
+}
+.border-os-black\/15 {
+  border-color: var(--os-black-15) !important;
+}
+.border-os-black\/20 {
+  border-color: var(--os-black-20) !important;
+}
+.border-os-black\/30 {
+  border-color: var(--os-black-30) !important;
+}
+.border-os-black\/35 {
+  border-color: var(--os-black-30) !important;
+}
+.border-os-black\/5 {
+  border-color: var(--os-black-5) !important;
+}
+.bg-os-black\/5 {
+  background-color: var(--os-black-5) !important;
+}
+.bg-os-black\/30 {
+  background-color: var(--os-black-30) !important;
+}
+
+@layer base {
+  body {
+    @apply font-mono overflow-hidden;
+    background-color: var(--os-white);
+    color: var(--os-black);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+}
+
+/* CRT EFFECTS - Subtle & Editorial */
+.crt-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #000000 !important;
+  /* Vintage TV Monitor bezel */
+  padding: 2.5rem;
+  box-sizing: border-box;
+}
+
+.crt-screen {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(var(--os-white)); /* Styled dynamically */
+  border-radius: 32px;
+  overflow: hidden;
+  box-shadow: inset 0 0 60px rgba(0, 0, 0, 0.1), 
+              0 0 15px rgba(245, 242, 235, 0.2);
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Paper Texture */
+.paper-texture {
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  opacity: 0.12;
+  mix-blend-mode: multiply;
+  pointer-events: none;
+  z-index: 10;
+}
+
+/* Curvature Shader Simulation - More subtle for editorial */
+.crt-screen::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(
+      rgba(26, 25, 24, 0) 50%,
+      rgba(0, 0, 0, 0.03) 50%
+    ),
+    linear-gradient(
+      90deg,
+      rgba(255, 0, 0, 0.02),
+      rgba(0, 255, 0, 0.01),
+      rgba(0, 0, 255, 0.02)
+    );
+  z-index: 20;
+  background-size: 100% 4px, 4px 100%;
+  pointer-events: none;
+  border-radius: 32px;
+  box-shadow: inset 0 0 40px rgba(0,0,0,0.15);
+}
+
+/* Subtle scanline overlay */
+.scanlines {
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 1px,
+    rgba(26, 25, 24, 0.04) 2px,
+    rgba(26, 25, 24, 0.04) 3px
+  );
+  z-index: 21;
+  pointer-events: none;
+}
+
+/* Subtle VHS Noise */
+.vhs-noise {
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  opacity: 0.03;
+  mix-blend-mode: multiply;
+  z-index: 22;
+  pointer-events: none;
+  animation: noise 0.2s infinite;
+}
+
+@keyframes noise {
+  0% { transform: translate(0, 0); }
+  10% { transform: translate(-1%, -1%); }
+  20% { transform: translate(1%, 1%); }
+  30% { transform: translate(-2%, -2%); }
+  40% { transform: translate(2%, 2%); }
+  50% { transform: translate(-1%, 1%); }
+  60% { transform: translate(1%, -1%); }
+  70% { transform: translate(2%, -2%); }
+  80% { transform: translate(-2%, 2%); }
+  90% { transform: translate(1%, 1%); }
+  100% { transform: translate(0, 0); }
+}
+
+/* Subtle Flicker */
+.crt-flicker {
+  animation: flicker 0.15s infinite;
+}
+
+@keyframes flicker {
+  0% { opacity: 0.98; }
+  50% { opacity: 1; }
+  100% { opacity: 0.98; }
+}
+
+/* TV Static */
+.tv-static {
+  position: absolute;
+  inset: 0;
+  background: white;
+  z-index: 99;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  opacity: 0;
+  pointer-events: none;
+  mix-blend-mode: difference;
+}
+
+/* CRT Screen Power on */
+.power-on {
+  animation: power-on-anim 1.5s ease-out forwards;
+}
+
+@keyframes power-on-anim {
+  0% { transform: scale(1, 0.001); filter: brightness(10); opacity: 1; }
+  20% { transform: scale(1, 0.001); filter: brightness(10); opacity: 1; }
+  50% { transform: scale(1, 1); filter: brightness(1.5); opacity: 1; }
+  100% { transform: scale(1, 1); filter: brightness(1); opacity: 1; }
+}
+
+/* Hide scrollbar for Lenis smooth scrolling inside container */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide OSInterface frame text when certificate is zoomed */
+body.cert-zoomed .pointer-events-none.z-50 {
+  opacity: 0 !important;
+  pointer-events: none !important;
+  visibility: hidden !important;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Lightbox fade-in animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.96); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+/* ──────────────────────────────────────────────────────────
+   HIGH-PERFORMANCE HARDWARE-ACCELERATED CSS ARCHIVE MARQUEES
+   ────────────────────────────────────────────────────────── */
+
+/* Speed Upward (Fast) */
+.animate-marquee-up-fast {
+  animation: marqueeUp 25s linear infinite;
+}
+
+/* Speed Downward (Slow) */
+.animate-marquee-down-slow {
+  animation: marqueeDown 32s linear infinite;
+}
+
+/* Speed Upward (Super Fast) */
+.animate-marquee-up-superfast {
+  animation: marqueeUp 18s linear infinite;
+}
+
+/* Speed Downward (Super Slow) */
+.animate-marquee-down-superslow {
+  animation: marqueeDown 40s linear infinite;
+}
+
+@keyframes marqueeUp {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, -50%, 0);
+  }
+}
+
+@keyframes marqueeDown {
+  0% {
+    transform: translate3d(0, -50%, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
