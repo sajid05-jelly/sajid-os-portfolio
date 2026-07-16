@@ -220,7 +220,7 @@ const Home = () => {
         {/* Layer 30: Magazine Model Portrait Integration */}
         <img 
           ref={portraitRef}
-          src="/potrait2.png"
+          src="/potraitnew.PNG"
           alt="Digital Artist Portrait"
           className="absolute z-30 right-[8vw] sm:right-[10vw] md:right-[25vw] translate-x-0 sm:translate-x-[20px] bottom-[36px] h-[45vh] sm:h-[65vh] md:h-[75vh] w-auto object-contain object-bottom drop-shadow-sm grayscale pointer-events-none transform-gpu"
           style={{ transformStyle: 'preserve-3d', transform: 'translateZ(80px)' }}
