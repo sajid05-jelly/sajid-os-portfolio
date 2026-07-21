@@ -129,7 +129,7 @@ const ContentCreator = () => {
       </div>
 
       {/* Giant Background Watermark Text positioned in the gap below stats */}
-      <div className="absolute inset-x-0 flex justify-center items-center pointer-events-none z-0 select-none top-[58%] md:top-[62%]">
+      <div className="absolute inset-x-0 flex justify-center items-center pointer-events-none z-0 select-none top-[520px] md:top-[50vh]">
         <h1 className="text-[15vw] font-heading font-black tracking-[0.1em] leading-none text-os-black" style={{ opacity: 0.03 }}>CREATOR</h1>
       </div>
 
