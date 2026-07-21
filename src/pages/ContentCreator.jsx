@@ -100,7 +100,7 @@ const ContentCreator = () => {
   };
 
   return (
-    <div className="relative w-full h-full bg-[#F5F2EA] overflow-y-auto block select-none">
+    <div className="relative w-full h-full min-h-full bg-[#F5F2EA] overflow-y-auto block select-none">
 
       {/* Left side label */}
       <div 
@@ -134,7 +134,7 @@ const ContentCreator = () => {
       </div>
 
       {/* Scrollable Content Container */}
-      <div className="w-full pt-8 pb-12 px-6 md:px-16 pointer-events-auto flex flex-col gap-6 relative z-10">
+      <div className="w-full h-fit min-h-0 pt-8 pb-12 px-6 md:px-16 pointer-events-auto flex flex-col gap-6 relative z-10">
 
       {/* Scrollable Header Navigation */}
       <div className="w-full max-w-[1400px] mx-auto flex justify-between items-center mb-2 md:mb-6 shrink-0 pointer-events-auto relative z-20 border-b border-os-black/5 pb-2 md:pb-6">
@@ -184,7 +184,7 @@ const ContentCreator = () => {
 
 
       {/* Main Grid: Left, Middle, Right Column Panels */}
-      <div className="max-w-[1400px] mx-auto w-full relative z-10 grid grid-cols-1 xl:grid-cols-12 gap-8 xl:gap-6 items-start shrink-0 py-2">
+      <div className="max-w-[1400px] mx-auto w-full relative z-10 grid grid-cols-1 xl:grid-cols-12 gap-8 xl:gap-6 items-start shrink-0 py-2 h-fit">
         
         {/* Left Column: Headline & Description */}
         <div className="xl:col-span-3 flex flex-col text-left xl:pl-10 pb-6 xl:pb-0 h-fit">
