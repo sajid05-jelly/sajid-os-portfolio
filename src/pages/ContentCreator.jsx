@@ -205,28 +205,7 @@ const ContentCreator = () => {
             From dance floors to diverse minds, from fests to friendships, I capture it all and turn it into memories that last forever.
           </p>
 
-          <div className="mt-8">
-            {/* Signature Widget */}
-            <div className="flex items-center gap-4">
-              <span className="font-serif italic text-2xl text-os-black opacity-85 select-none font-semibold tracking-wide">Sajid</span>
-              <div className="h-[1px] w-20 bg-os-black/20" />
-              <span className="text-os-accent font-bold text-sm">+</span>
-            </div>
-          </div>
 
-          {/* Scroll Down Indicator */}
-          <div 
-            onClick={(e) => {
-              const scrollContainer = e.currentTarget.closest('.overflow-y-auto');
-              if (scrollContainer) scrollContainer.scrollBy({ top: 380, behavior: 'smooth' });
-            }}
-            className="inline-flex items-center gap-2 px-3.5 py-1.5 border border-os-accent/30 bg-os-accent/5 hover:bg-os-accent hover:text-[#F5F2EA] hover:border-os-accent rounded-full font-mono text-[9px] text-os-accent font-bold tracking-widest uppercase transition-all duration-300 cursor-pointer w-fit mt-6 hover:scale-105 select-none shadow-[0_4px_12px_rgba(196,58,28,0.05)] animate-pulse"
-          >
-            <span>SCROLL DOWN</span>
-            <svg className="w-2.5 h-2.5 fill-current animate-bounce mt-0.5" viewBox="0 0 24 24">
-              <path d="M12 21l-12-18h24z"/>
-            </svg>
-          </div>
         </div>
 
 
