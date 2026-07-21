@@ -186,7 +186,7 @@ const ContentCreator = () => {
       <div className="max-w-[1400px] mx-auto w-full relative z-10 grid grid-cols-1 xl:grid-cols-12 gap-8 xl:gap-6 items-start shrink-0 py-2">
         
         {/* Left Column: Headline & Description */}
-        <div className="xl:col-span-3 flex flex-col text-left xl:pl-10 pb-6 xl:pb-0">
+        <div className="xl:col-span-3 flex flex-col text-left xl:pl-10 pb-6 xl:pb-0 h-fit">
           <span className="font-mono text-[11px] text-os-accent font-bold tracking-widest">// CREATOR CONCEPT</span>
           <h2 className="text-4xl md:text-5xl xl:text-[54px] font-heading font-black leading-[0.95] tracking-tighter text-os-black uppercase mt-6">
             I DON'T JUST<br/>
@@ -223,7 +223,7 @@ const ContentCreator = () => {
         </div>
 
         {/* Middle Column: Hero Video Frame & Quick Stats */}
-        <div className="xl:col-span-5 flex flex-col justify-start items-start relative pt-0 pb-6 xl:pb-0">
+        <div className="xl:col-span-5 flex flex-col justify-start items-start relative pt-0 pb-6 xl:pb-0 h-fit">
           
           <div className="w-full flex items-center justify-between mb-2 px-1 max-w-[560px] mx-0 xl:mx-auto">
             <span className="font-mono text-[9px] uppercase tracking-widest text-os-black/40">// CAPTURING. CREATING. CONNECTING.</span>
@@ -320,7 +320,7 @@ const ContentCreator = () => {
         </div>
 
         {/* Right Column: Social Metrics & Tools */}
-        <div className="xl:col-span-4 flex flex-col justify-between h-auto text-left space-y-6 xl:pr-10 pb-6 xl:pb-0">
+        <div className="xl:col-span-4 flex flex-col justify-start h-fit text-left space-y-6 xl:pr-10 pb-6 xl:pb-0">
           
           {/* Social Stats Block */}
           <div className="space-y-2">
