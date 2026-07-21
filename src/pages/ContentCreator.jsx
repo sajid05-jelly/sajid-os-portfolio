@@ -221,7 +221,19 @@ const ContentCreator = () => {
               <path d="M12 21l-12-18h24z"/>
             </svg>
           </div>
+
+          {/* Quick Stats Grid: Relocated to Left Column */}
+          <div className="w-full grid grid-cols-4 gap-2 mt-8">
+            {stats.map((stat, idx) => (
+              <div key={idx} className="border border-os-black/10 bg-[#E8E4D9]/20 p-2 rounded text-center flex flex-col justify-center">
+                <span className="text-lg md:text-xl font-heading font-black text-os-accent leading-none">{stat.value}</span>
+                <span className="font-mono text-[7px] font-bold text-os-black uppercase mt-1 leading-none tracking-wider">{stat.label}</span>
+                <span className="font-mono text-[6px] text-os-black/40 uppercase mt-0.5 leading-none tracking-wider">{stat.sub}</span>
+              </div>
+            ))}
+          </div>
         </div>
+
 
         {/* Middle Column: Hero Video Frame & Quick Stats */}
         <div className="xl:col-span-5 flex flex-col justify-start items-start relative pt-0 pb-6 xl:pb-0 h-fit">
@@ -263,19 +275,8 @@ const ContentCreator = () => {
             </div>
           </div>
 
-          {/* Quick Stats Grid: 40px Spacing */}
-          <div className="w-full max-w-[560px] mx-0 xl:mx-auto grid grid-cols-4 gap-2 mt-10">
-            {stats.map((stat, idx) => (
-              <div key={idx} className="border border-os-black/10 bg-[#E8E4D9]/20 p-2.5 rounded text-center flex flex-col justify-center">
-                <span className="text-xl md:text-2xl font-heading font-black text-os-accent leading-none">{stat.value}</span>
-                <span className="font-mono text-[8px] font-bold text-os-black uppercase mt-1 leading-none tracking-wider">{stat.label}</span>
-                <span className="font-mono text-[7px] text-os-black/40 uppercase mt-0.5 leading-none tracking-wider">{stat.sub}</span>
-              </div>
-            ))}
-          </div>
-
-          {/* Creator Impact Archive — Extended Card: 28px Spacing */}
-          <div className="w-full max-w-[560px] mx-0 xl:mx-auto mt-[28px] border border-os-black/12 bg-os-white hover:border-os-accent/35 hover:shadow-[0_4px_24px_rgba(196,58,28,0.09)] transition-all duration-500 rounded-sm group cursor-default overflow-hidden">
+          {/* Creator Impact Archive — Extended Card: 24px Spacing */}
+          <div className="w-full max-w-[560px] mx-0 xl:mx-auto mt-6 border border-os-black/12 bg-os-white hover:border-os-accent/35 hover:shadow-[0_4px_24px_rgba(196,58,28,0.09)] transition-all duration-500 rounded-sm group cursor-default overflow-hidden">
             <div className="flex items-stretch h-[130px]">
 
               {/* Left: Sample Certificate Photo */}
