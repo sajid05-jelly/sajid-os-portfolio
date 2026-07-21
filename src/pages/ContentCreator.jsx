@@ -186,46 +186,44 @@ const ContentCreator = () => {
       <div className="max-w-[1400px] mx-auto w-full relative z-10 grid grid-cols-1 xl:grid-cols-12 gap-8 xl:gap-6 items-start shrink-0 py-2">
         
         {/* Left Column: Headline & Description */}
-        <div className="xl:col-span-3 flex flex-col justify-between h-auto text-left xl:pl-10 space-y-6 pb-6 xl:pb-0">
-          <div className="space-y-4">
-            <span className="font-mono text-[11px] text-os-accent font-bold tracking-widest">// CREATOR CONCEPT</span>
-            <h2 className="text-4xl md:text-5xl xl:text-[54px] font-heading font-black leading-[0.95] tracking-tighter text-os-black uppercase">
-              I DON'T JUST<br/>
-              CREATE CONTENT.<br/>
-              <span className="text-os-accent block mt-1.5">I DOCUMENT<br/>CAMPUS CULTURE.</span>
-            </h2>
-            <div className="w-12 h-[2px] bg-os-accent" />
-            <p className="font-mono text-[13px] md:text-sm text-os-black/75 max-w-sm leading-relaxed">
-              From dance floors to diverse minds, from fests to friendships, I capture it all and turn it into memories that last forever.
-            </p>
-          </div>
+        <div className="xl:col-span-3 flex flex-col text-left xl:pl-10 pb-6 xl:pb-0">
+          <span className="font-mono text-[11px] text-os-accent font-bold tracking-widest">// CREATOR CONCEPT</span>
+          <h2 className="text-4xl md:text-5xl xl:text-[54px] font-heading font-black leading-[0.95] tracking-tighter text-os-black uppercase mt-6">
+            I DON'T JUST<br/>
+            CREATE CONTENT.<br/>
+            <span className="text-os-accent block mt-1.5">I DOCUMENT<br/>CAMPUS CULTURE.</span>
+          </h2>
+          <div className="w-12 h-[2px] bg-os-accent mt-6" />
+          <p className="font-mono text-[13px] md:text-sm text-os-black/75 max-w-sm leading-relaxed mt-6">
+            From dance floors to diverse minds, from fests to friendships, I capture it all and turn it into memories that last forever.
+          </p>
 
-          <div className="space-y-4 pt-2">
+          <div className="mt-8">
             {/* Signature Widget */}
             <div className="flex items-center gap-4">
               <span className="font-serif italic text-2xl text-os-black opacity-85 select-none font-semibold tracking-wide">Sajid</span>
               <div className="h-[1px] w-20 bg-os-black/20" />
               <span className="text-os-accent font-bold text-sm">+</span>
             </div>
+          </div>
 
-            {/* Scroll Down Indicator */}
-            <div 
-              onClick={(e) => {
-                const scrollContainer = e.currentTarget.closest('.overflow-y-auto');
-                if (scrollContainer) scrollContainer.scrollBy({ top: 380, behavior: 'smooth' });
-              }}
-              className="inline-flex items-center gap-2 px-3.5 py-1.5 border border-os-accent/30 bg-os-accent/5 hover:bg-os-accent hover:text-[#F5F2EA] hover:border-os-accent rounded-full font-mono text-[9px] text-os-accent font-bold tracking-widest uppercase transition-all duration-300 cursor-pointer w-fit mt-4 hover:scale-105 select-none shadow-[0_4px_12px_rgba(196,58,28,0.05)] animate-pulse"
-            >
-              <span>SCROLL DOWN</span>
-              <svg className="w-2.5 h-2.5 fill-current animate-bounce mt-0.5" viewBox="0 0 24 24">
-                <path d="M12 21l-12-18h24z"/>
-              </svg>
-            </div>
+          {/* Scroll Down Indicator */}
+          <div 
+            onClick={(e) => {
+              const scrollContainer = e.currentTarget.closest('.overflow-y-auto');
+              if (scrollContainer) scrollContainer.scrollBy({ top: 380, behavior: 'smooth' });
+            }}
+            className="inline-flex items-center gap-2 px-3.5 py-1.5 border border-os-accent/30 bg-os-accent/5 hover:bg-os-accent hover:text-[#F5F2EA] hover:border-os-accent rounded-full font-mono text-[9px] text-os-accent font-bold tracking-widest uppercase transition-all duration-300 cursor-pointer w-fit mt-6 hover:scale-105 select-none shadow-[0_4px_12px_rgba(196,58,28,0.05)] animate-pulse"
+          >
+            <span>SCROLL DOWN</span>
+            <svg className="w-2.5 h-2.5 fill-current animate-bounce mt-0.5" viewBox="0 0 24 24">
+              <path d="M12 21l-12-18h24z"/>
+            </svg>
           </div>
         </div>
 
         {/* Middle Column: Hero Video Frame & Quick Stats */}
-        <div className="xl:col-span-5 flex flex-col justify-center items-center relative pt-0 pb-6 xl:pb-0">
+        <div className="xl:col-span-5 flex flex-col justify-start items-start relative pt-0 pb-6 xl:pb-0">
           
           <div className="w-full flex items-center justify-between mb-2 px-1 max-w-[560px] mx-0 xl:mx-auto">
             <span className="font-mono text-[9px] uppercase tracking-widest text-os-black/40">// CAPTURING. CREATING. CONNECTING.</span>
@@ -264,8 +262,8 @@ const ContentCreator = () => {
             </div>
           </div>
 
-          {/* Quick Stats Grid */}
-          <div className="w-full max-w-[560px] mx-0 xl:mx-auto grid grid-cols-4 gap-2 mt-4">
+          {/* Quick Stats Grid: 40px Spacing */}
+          <div className="w-full max-w-[560px] mx-0 xl:mx-auto grid grid-cols-4 gap-2 mt-10">
             {stats.map((stat, idx) => (
               <div key={idx} className="border border-os-black/10 bg-[#E8E4D9]/20 p-2.5 rounded text-center flex flex-col justify-center">
                 <span className="text-xl md:text-2xl font-heading font-black text-os-accent leading-none">{stat.value}</span>
@@ -275,8 +273,8 @@ const ContentCreator = () => {
             ))}
           </div>
 
-          {/* Creator Impact Archive — Extended Card */}
-          <div className="w-full max-w-[560px] mx-0 xl:mx-auto mt-4 border border-os-black/12 bg-os-white hover:border-os-accent/35 hover:shadow-[0_4px_24px_rgba(196,58,28,0.09)] transition-all duration-500 rounded-sm group cursor-default overflow-hidden">
+          {/* Creator Impact Archive — Extended Card: 28px Spacing */}
+          <div className="w-full max-w-[560px] mx-0 xl:mx-auto mt-[28px] border border-os-black/12 bg-os-white hover:border-os-accent/35 hover:shadow-[0_4px_24px_rgba(196,58,28,0.09)] transition-all duration-500 rounded-sm group cursor-default overflow-hidden">
             <div className="flex items-stretch h-[130px]">
 
               {/* Left: Sample Certificate Photo */}
@@ -407,7 +405,7 @@ const ContentCreator = () => {
       </div>
 
       {/* Row 2: Moments Captured (Polaroid Horizontal Scroll list) */}
-      <div className="max-w-[1400px] mx-auto w-full relative z-10 border-t border-os-black/10 pt-4 pb-2 shrink-0">
+      <div className="max-w-[1400px] mx-auto w-full relative z-10 border-t border-os-black/10 pt-8 pb-2 shrink-0 mt-8">
         <div className="flex justify-between items-center mb-3">
           <span className="font-mono text-[9px] uppercase tracking-widest text-os-black/40">// MOMENTS CAPTURED</span>
           <div className="flex items-center gap-1.5">
