@@ -128,6 +128,11 @@ const ContentCreator = () => {
         </span>
       </div>
 
+      {/* Giant Background Watermark Text positioned in the gap below stats */}
+      <div className="absolute inset-x-0 flex justify-center items-center pointer-events-none z-0 select-none top-[58%] md:top-[62%]">
+        <h1 className="text-[15vw] font-heading font-black tracking-[0.1em] leading-none text-os-black" style={{ opacity: 0.03 }}>CREATOR</h1>
+      </div>
+
       {/* Scrollable Content Container */}
       <div className="w-full pt-8 pb-12 px-6 md:px-16 pointer-events-auto flex flex-col gap-6 relative z-10">
 
@@ -177,10 +182,6 @@ const ContentCreator = () => {
         </div>
       </div>
 
-      {/* Giant Background Watermark Text positioned in the gap below stats */}
-      <div className="absolute inset-x-0 flex justify-center items-center pointer-events-none z-0 select-none top-[58%] md:top-[62%]">
-        <h1 className="text-[15vw] font-heading font-black tracking-[0.1em] leading-none text-os-black" style={{ opacity: 0.03 }}>CREATOR</h1>
-      </div>
 
       {/* Main Grid: Left, Middle, Right Column Panels */}
       <div className="max-w-[1400px] mx-auto w-full relative z-10 grid grid-cols-1 xl:grid-cols-12 gap-8 xl:gap-6 items-start shrink-0 py-2">
