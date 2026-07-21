@@ -189,7 +189,7 @@ const ContentCreator = () => {
         {/* Left Column: Headline & Description */}
         <div className="xl:col-span-3 flex flex-col text-left xl:pl-10 pb-6 xl:pb-0 h-fit">
           <span className="font-mono text-[11px] text-os-accent font-bold tracking-widest">// CREATOR CONCEPT</span>
-          <h2 className="text-4xl md:text-5xl xl:text-[54px] font-heading font-black leading-[0.95] tracking-tighter text-os-black uppercase mt-6">
+          <h2 className="text-[32px] md:text-4xl xl:text-[46px] font-heading font-black leading-[0.95] tracking-tighter text-os-black uppercase mt-6">
             I DON'T<br/>
             JUST<br/>
             CREATE<br/>
