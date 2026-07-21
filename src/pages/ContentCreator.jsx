@@ -100,7 +100,7 @@ const ContentCreator = () => {
   };
 
   return (
-    <div className="relative w-full h-full bg-[#F5F2EA] overflow-y-auto flex flex-col select-none">
+    <div className="relative w-full h-full bg-[#F5F2EA] overflow-y-auto block select-none">
 
       {/* Left side label */}
       <div 
