@@ -190,9 +190,15 @@ const ContentCreator = () => {
         <div className="xl:col-span-3 flex flex-col text-left xl:pl-10 pb-6 xl:pb-0 h-fit">
           <span className="font-mono text-[11px] text-os-accent font-bold tracking-widest">// CREATOR CONCEPT</span>
           <h2 className="text-4xl md:text-5xl xl:text-[54px] font-heading font-black leading-[0.95] tracking-tighter text-os-black uppercase mt-6">
-            I DON'T JUST<br/>
-            CREATE CONTENT.<br/>
-            <span className="text-os-accent block mt-1.5">I DOCUMENT<br/>CAMPUS CULTURE.</span>
+            I DON'T<br/>
+            JUST<br/>
+            CREATE<br/>
+            CONTENT.
+            <span className="text-os-accent block mt-3.5">
+              I DOCUMENT<br/>
+              CAMPUS<br/>
+              CULTURE.
+            </span>
           </h2>
           <div className="w-12 h-[2px] bg-os-accent mt-6" />
           <p className="font-mono text-[13px] md:text-sm text-os-black/75 max-w-sm leading-relaxed mt-6">
