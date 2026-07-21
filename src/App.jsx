@@ -47,7 +47,7 @@ const AppContent = () => {
       ) : (
         <>
           <OSInterface currentPath={location.pathname} />
-          <div className="relative z-10 w-full h-full overflow-hidden pt-0 pb-0 px-0">
+          <div className="relative z-10 w-full h-full overflow-y-auto pt-0 pb-0 px-0">
             <PageTransition>
               <Routes>
                 <Route path="/" element={<Home />} />
