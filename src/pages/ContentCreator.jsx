@@ -129,7 +129,7 @@ const ContentCreator = () => {
       </div>
 
       {/* Giant Background Watermark Text positioned in the gap below stats */}
-      <div className="absolute inset-x-0 flex justify-center items-center pointer-events-none z-0 select-none top-[520px] md:top-[50vh]">
+      <div className="absolute inset-x-0 flex justify-center items-center pointer-events-none z-0 select-none top-[420px]">
         <h1 className="text-[15vw] font-heading font-black tracking-[0.1em] leading-none text-os-black" style={{ opacity: 0.03 }}>CREATOR</h1>
       </div>
 
@@ -221,17 +221,6 @@ const ContentCreator = () => {
               <path d="M12 21l-12-18h24z"/>
             </svg>
           </div>
-
-          {/* Quick Stats Grid: Relocated to Left Column */}
-          <div className="w-full grid grid-cols-4 gap-2 mt-8">
-            {stats.map((stat, idx) => (
-              <div key={idx} className="border border-os-black/10 bg-[#E8E4D9]/20 p-2 rounded text-center flex flex-col justify-center">
-                <span className="text-lg md:text-xl font-heading font-black text-os-accent leading-none">{stat.value}</span>
-                <span className="font-mono text-[7px] font-bold text-os-black uppercase mt-1 leading-none tracking-wider">{stat.label}</span>
-                <span className="font-mono text-[6px] text-os-black/40 uppercase mt-0.5 leading-none tracking-wider">{stat.sub}</span>
-              </div>
-            ))}
-          </div>
         </div>
 
 
@@ -318,6 +307,18 @@ const ContentCreator = () => {
 
             </div>
           </div>
+
+          {/* Quick Stats Grid: Positioned below Creator Impact Archive card */}
+          <div className="w-full max-w-[560px] mx-0 xl:mx-auto grid grid-cols-4 gap-2 mt-6">
+            {stats.map((stat, idx) => (
+              <div key={idx} className="border border-os-black/10 bg-[#E8E4D9]/20 p-2 rounded text-center flex flex-col justify-center">
+                <span className="text-lg md:text-xl font-heading font-black text-os-accent leading-none">{stat.value}</span>
+                <span className="font-mono text-[7px] font-bold text-os-black uppercase mt-1 leading-none tracking-wider">{stat.label}</span>
+                <span className="font-mono text-[6px] text-os-black/40 uppercase mt-0.5 leading-none tracking-wider">{stat.sub}</span>
+              </div>
+            ))}
+          </div>
+
 
         </div>
 
