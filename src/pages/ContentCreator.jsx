@@ -195,7 +195,7 @@ const ContentCreator = () => {
             CREATE<br/>
             CONTENT.
             <span className="text-os-accent block mt-3.5">
-              I DOCUMENT<br/>
+              <span className="whitespace-nowrap">I DOCUMENT</span><br/>
               CAMPUS<br/>
               CULTURE.
             </span>
