@@ -129,7 +129,7 @@ const ContentCreator = () => {
       </div>
 
       {/* Scrollable Content Container */}
-      <div className="w-full h-full pt-8 pb-12 px-6 md:px-16 pointer-events-auto overflow-y-auto flex flex-col gap-6 hide-scrollbar relative z-10">
+      <div className="w-full pt-8 pb-12 px-6 md:px-16 pointer-events-auto flex flex-col gap-6 relative z-10">
 
       {/* Scrollable Header Navigation */}
       <div className="w-full max-w-[1400px] mx-auto flex justify-between items-center mb-2 md:mb-6 shrink-0 pointer-events-auto relative z-20 border-b border-os-black/5 pb-2 md:pb-6">
