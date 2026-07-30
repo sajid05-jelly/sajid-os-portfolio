@@ -1,7 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 
-const DOMAIN = 'https://sajidos-portfolio.vercel.app';
+const DOMAIN = 'https://sajid-os-portfolio.vercel.app';
 const DEFAULT_IMAGE = `${DOMAIN}/potraitnew.PNG`;
 
 const personSchema = {
