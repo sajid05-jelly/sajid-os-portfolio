@@ -5,7 +5,7 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const DOMAIN = 'https://sajid-os-portfolio.vercel.app';
+const DOMAIN = 'https://sajidos-portfolio.vercel.app';
 const TODAY = new Date().toISOString().split('T')[0];
 
 const routes = [
