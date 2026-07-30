@@ -1,6 +1,7 @@
 import React, { useRef, useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
+import SEO from '../components/SEO/SEO';
 
 const ContentCreator = () => {
   const momentsContainerRef = useRef(null);
@@ -101,6 +102,12 @@ const ContentCreator = () => {
 
   return (
     <div className="relative w-full h-full bg-[#F5F2EA] overflow-y-auto block select-none">
+      <SEO 
+        title="Content Creator & Media Production"
+        description="Documenting campus culture, video production, media initiatives, and creative content creation by Mohamed Sajid (SRM Vipers)."
+        keywords="Mohamed Sajid Content Creator, Campus Culture, SRM Vipers, Video Production, Media Lead, Creative Director"
+        path="/content-creator"
+      />
 
       {/* Left side label */}
       <div 

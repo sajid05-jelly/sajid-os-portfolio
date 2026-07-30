@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
+import SEO from '../components/SEO/SEO';
 
 const Certifications = () => {
   const [selectedCert, setSelectedCert] = useState(null);
@@ -79,6 +80,12 @@ const Certifications = () => {
 
   return (
     <div className="relative w-full h-full xl:h-full pt-16 pb-16 px-6 md:px-16 pointer-events-auto overflow-y-auto xl:overflow-y-hidden bg-[#F5F2EA] flex flex-col justify-between select-none">
+      <SEO 
+        title="Certifications & Credentials"
+        description="Verified certifications in AI & Data Science, Software Development, Cybersecurity, and Computer Vision earned by Mohamed Sajid."
+        keywords="Mohamed Sajid Certifications, AI Certificates, Web Development Credentials, Cybersecurity, Data Science, Hackathons"
+        path="/certifications"
+      />
       
       {/* Giant Background Watermark Outline Text */}
       <div className="absolute inset-0 flex flex-col justify-center items-center pointer-events-none z-0 opacity-[0.02]">

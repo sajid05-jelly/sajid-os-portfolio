@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import SEO from '../components/SEO/SEO';
 
 const About = () => {
   const stats = [
@@ -25,6 +26,12 @@ const About = () => {
 
   return (
     <div className="relative w-full h-full pt-16 pb-10 px-6 md:px-16 pointer-events-auto overflow-y-auto bg-[#F5F2EA] flex flex-col justify-between select-none">
+      <SEO 
+        title="About Me"
+        description="Learn about Mohamed Sajid - Augmented Full Stack Web Developer and Content Creator. Specialized in AI, React, Node.js, and interactive web experiences."
+        keywords="About Mohamed Sajid, Full Stack Developer, React Developer, AI Web Applications, Web Engineer India"
+        path="/about"
+      />
       
       {/* Giant Background Watermark Outline Text */}
       <div className="absolute inset-0 flex flex-col justify-center items-center pointer-events-none z-0 opacity-[0.03]">

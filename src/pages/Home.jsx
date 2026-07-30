@@ -1,6 +1,8 @@
 import React, { useRef, useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import gsap from 'gsap';
+import SEO from '../components/SEO/SEO';
+
 const Home = () => {
   const containerRef = useRef(null);
   const portraitRef = useRef(null);
@@ -94,6 +96,12 @@ const Home = () => {
 
   return (
     <div ref={containerRef} className="w-full h-[100dvh] overflow-hidden pointer-events-auto bg-[#F5F2EA] relative perspective-[1000px]">
+      <SEO 
+        title="Home"
+        description="Interactive retro portfolio OS of Mohamed Sajid. Full Stack Web Developer, UI/UX Designer, and Content Creator."
+        keywords="Mohamed Sajid, Sajid OS, Full Stack Developer, React 19, Three.js, Portfolio, Web Developer India"
+        path="/"
+      />
 
       {/* ---------------------------------------------------- */}
       {/* HERO FOREGROUND & PARALLAX */}

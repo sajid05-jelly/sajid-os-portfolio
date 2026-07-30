@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import SEO from '../components/SEO/SEO';
 
 const Skills = () => {
   const coreStack = [
@@ -53,6 +54,12 @@ const Skills = () => {
 
   return (
     <div className="relative w-full h-full pt-16 pb-10 px-6 md:px-16 pointer-events-auto overflow-y-auto overflow-x-hidden bg-[#F5F2EA] flex flex-col justify-between select-none">
+      <SEO 
+        title="Technical Skills & Stack"
+        description="Explore Mohamed Sajid's technical stack: React, JavaScript, Python, Tailwind CSS, Firebase, AI Tools, and Creative Video Production."
+        keywords="Mohamed Sajid Skills, React Developer, Web Stack, Python Developer, Tailwind CSS, Technical Expertise"
+        path="/skills"
+      />
       
       {/* Giant Background Watermark Outline Text */}
       <div className="absolute inset-0 flex flex-col justify-center items-center pointer-events-none z-0 opacity-[0.03]">

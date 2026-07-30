@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
+import SEO from '../components/SEO/SEO';
 
 const Contact = () => {
   const [time, setTime] = useState(new Date().toLocaleTimeString());
@@ -49,6 +50,12 @@ const Contact = () => {
 
   return (
     <div className="relative w-full h-full bg-[#F5F2EA] overflow-y-auto overflow-x-hidden flex flex-col select-none">
+      <SEO 
+        title="Contact & Connect"
+        description="Get in touch with Mohamed Sajid for full-stack web development, AI projects, content creation, and creative collaborations."
+        keywords="Contact Mohamed Sajid, Hire React Developer, Full Stack Developer Contact, Email Sajid, Freelance Developer"
+        path="/contact"
+      />
 
       {/* Left side label */}
       <div 

@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState, useCallback } from 'react';
 import { NavLink } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import gsap from 'gsap';
+import SEO from '../components/SEO/SEO';
 
 const Photography = () => {
 
@@ -139,7 +140,13 @@ const Photography = () => {
   };
 
   return (
-    <div className="relative w-full h-full bg-os-white overflow-hidden flex flex-col select-none">
+    <div className="relative w-full h-full bg-[#F5F2EA] overflow-hidden select-none">
+      <SEO 
+        title="Photography & Visual Archive"
+        description="Explore Mohamed Sajid's photography portfolio and visual archive capturing moments, campus culture, events, and portraiture."
+        keywords="Mohamed Sajid Photography, Visual Archive, Campus Photography, Event Photography, Visual Storytelling, Photo Gallery"
+        path="/photography"
+      />
 
       {/* Scanline texture overlay */}
       <div
