@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://sajid-os-portfolio.vercel.app/sitemap.xml
+Sitemap: https://sajidos-portfolio.vercel.app/sitemap.xml
