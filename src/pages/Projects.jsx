@@ -208,7 +208,7 @@ const Projects = () => {
       duration: "2+ Months (Ongoing)",
       status: "LIVE",
       technologies: "React.js, Vite, Tailwind CSS, Framer Motion, GSAP, JavaScript (ES6+), HTML5, CSS3, Vercel Deployment",
-      link: "https://sajidos-archive.web.app",
+      link: "https://sajidos-portfolio.vercel.app",
       desc: "An interactive personal portfolio designed to showcase projects and creative works.",
       longDesc: "SAJIDOS is a highly interactive personal portfolio designed to showcase projects, skills, certifications, photography, content creation, and creative works through a unique archive-inspired experience. It combines editorial design, creative storytelling, and modern web interactions to create an immersive digital identity.",
       quote: "Not just a portfolio. A living archive of creativity, technology, and impact.",
