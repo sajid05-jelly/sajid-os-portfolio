@@ -256,39 +256,42 @@ const ContentCreator = () => {
             </div>
           </div>
 
-          {/* Creator Impact Archive — Extended Card: 24px Spacing */}
+          {/* Creator Impact Archive — Extended Card */}
           <div className="w-full max-w-[560px] mx-0 xl:mx-auto mt-6 border border-os-black/12 bg-os-white hover:border-os-accent/35 hover:shadow-[0_4px_24px_rgba(196,58,28,0.09)] transition-all duration-500 rounded-sm group cursor-default overflow-hidden">
-            <div className="flex items-stretch h-[130px]">
+            <div className="flex flex-col sm:flex-row sm:items-stretch h-auto sm:h-[130px]">
 
-              {/* Left: Sample Certificate Photo */}
-              <div className="relative w-[120px] shrink-0 overflow-hidden border-r border-os-black/10">
-                <img
-                  src="/sample.png"
-                  alt="Certificate Sample"
-                  className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 scale-105 group-hover:scale-100"
-                />
-                {/* overlay label */}
-                <div className="absolute inset-0 bg-gradient-to-r from-transparent to-os-black/30 pointer-events-none" />
-                <span className="absolute bottom-2 left-2 font-mono text-[6px] uppercase tracking-widest text-white/70 bg-os-black/50 px-1 py-0.5">
-                  SAMPLE
-                </span>
+              {/* Top Row on Mobile / Left Section on Desktop */}
+              <div className="flex items-stretch border-b sm:border-b-0 sm:border-r border-os-black/10 shrink-0">
+                {/* Sample Certificate Photo */}
+                <div className="relative w-[100px] sm:w-[120px] h-[100px] sm:h-auto shrink-0 overflow-hidden border-r border-os-black/10">
+                  <img
+                    src="/sample.png"
+                    alt="Certificate Sample"
+                    className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 scale-105 group-hover:scale-100"
+                  />
+                  {/* overlay label */}
+                  <div className="absolute inset-0 bg-gradient-to-r from-transparent to-os-black/30 pointer-events-none" />
+                  <span className="absolute bottom-1.5 left-1.5 font-mono text-[6px] uppercase tracking-widest text-white/70 bg-os-black/50 px-1 py-0.5">
+                    SAMPLE
+                  </span>
+                </div>
+
+                {/* Number block */}
+                <div className="flex flex-col justify-center items-start px-4 sm:px-5 shrink-0 min-w-[88px]">
+                  <span className="font-heading font-black text-[36px] sm:text-[42px] leading-none text-os-black group-hover:text-os-accent transition-colors duration-300">10+</span>
+                  <span className="font-mono text-[6px] uppercase tracking-widest text-os-black/40 mt-1 text-left leading-tight">CERTIFICATES<br/>ISSUED</span>
+                </div>
               </div>
 
-              {/* Centre: Number block */}
-              <div className="flex flex-col justify-center items-start px-5 border-r border-os-black/8 shrink-0 min-w-[88px]">
-                <span className="font-heading font-black text-[42px] leading-none text-os-black group-hover:text-os-accent transition-colors duration-300">10+</span>
-                <span className="font-mono text-[6px] uppercase tracking-widest text-os-black/40 mt-1 text-left leading-tight">CERTIFICATES<br/>ISSUED</span>
-              </div>
-
-              {/* Right: Archive label + description */}
-              <div className="flex-1 flex flex-col justify-between px-5 py-3">
+              {/* Bottom Section on Mobile / Right Section on Desktop */}
+              <div className="flex-1 flex flex-col justify-between p-3.5 sm:px-5 sm:py-3 space-y-2 sm:space-y-0">
                 <div>
-                  <span className="font-mono text-[8px] uppercase tracking-[0.3em] text-os-accent font-bold">// CREATOR IMPACT ARCHIVE</span>
-                  <p className="font-mono text-[9px] text-os-black/60 leading-relaxed tracking-wide mt-2">
+                  <span className="font-mono text-[8px] uppercase tracking-[0.2em] sm:tracking-[0.3em] text-os-accent font-bold">// CREATOR IMPACT ARCHIVE</span>
+                  <p className="font-mono text-[9px] text-os-black/60 leading-relaxed tracking-wide mt-1.5 sm:mt-2">
                     Recognizing media team members, event volunteers and creative contributors across campus events through official participation certificates.
                   </p>
                 </div>
-                <div className="flex items-center justify-between mt-1">
+                <div className="flex items-center justify-between mt-1 pt-1 sm:pt-0">
                   <div className="flex items-center gap-1.5">
                     <div className="w-1.5 h-1.5 rounded-full bg-os-accent animate-pulse" />
                     <span className="font-mono text-[7px] uppercase tracking-widest text-os-black/30">Active</span>
